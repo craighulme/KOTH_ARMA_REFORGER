@@ -1,0 +1,16 @@
+SCR_BaseGameMode KOTH_GameMode1 : "{E5118D0809DD3CDF}Prefabs/MP/Modes/KOTH_GameMode.et" {
+ coords 5864.424 0 13555.45
+}
+KOTH_PresenceTriggerEntity : "{F9467A5734030343}Prefabs/MP/Triggers/KOTH_zoneTrigger.et" {
+ coords 3525.153 169.105 2867.011
+ angleX 0
+ angleZ 0
+ SphereRadius 200
+ {
+  KOTH_PriorityAreaPresenceTriggerEntity {
+   ID "60B4DB5F4B905473"
+   coords 0 0 0
+   SphereRadius 25
+  }
+ }
+}

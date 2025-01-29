@@ -1,0 +1,87 @@
+GenericEntity KOTH_SecondSpawn : "{0D777787DAAD3541}Prefabs/Structures/KOTH/Camp_Blufor.et" {
+ coords 6346.576 87.506 5675.703
+ angleY -59.078
+}
+GenericEntity KOTH_FirstSpawn : "{108B69D9D8DDE8B0}Prefabs/Structures/KOTH/Camp_Opfor.et" {
+ coords 3132.87 93.993 6324.919
+ angleY 71.764
+}
+$grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+ KOTH_SecondVehicleSpawn {
+  coords 6335.854 86.253 5660.385
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    KOTH_SecondVehicleSpawn2 {
+     coords -21.747 1.42 -3.05
+    }
+    KOTH_SecondVehicleSpawn3 {
+     coords -7.71 0.892 -18.704
+    }
+   }
+  }
+ }
+ KOTH_FirstVehicleSpawn {
+  coords 3142.06 90.446 6349.649
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    KOTH_FirstVehicleSpawn2 {
+     coords -21.894 0 -7.867
+    }
+    KOTH_FirstVehicleSpawn3 {
+     coords -41.622 0.964 -17.852
+    }
+   }
+  }
+ }
+ KOTH_ThirdVehicleSpawn {
+  coords 4708.81 73.428 8769.857
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    KOTH_ThirdVehicleSpawn2 {
+     coords 18.021 -3.21 10.82
+    }
+    KOTH_ThirdVehicleSpawn3 {
+     coords -9.86 0.27 -20.587
+    }
+   }
+  }
+ }
+}
+$grp GenericEntity : "{67EE7343073E3AF4}Prefabs/Systems/AmbientVehicles/AmbientVehicleSpawnpoint_US.et" {
+ KOTH_FirstFreeTruck {
+  coords 3129.096 93.079 6309.423
+  angleY 78.225
+ }
+ KOTH_SecondFreeTruck {
+  coords 6354.115 86.406 5687.048
+  angleY -73.446
+ }
+ KOTH_ThirdFreeTruck {
+  coords 4690.888 68.657 8795.508
+  angleY -108.382
+ }
+ KOTH_SecondFreeHelo {
+  coords 6361.867 85.375 5721.055
+  angleY -47.082
+ }
+ KOTH_FirstFreeHelo {
+  coords 3140.395 96.076 6294.784
+  angleY 56.098
+ }
+ KOTH_ThirdFreeHelo {
+  coords 4656.008 68.87 8813.679
+  angleY -146.391
+ }
+}
+GenericEntity KOTH_ThirdSpawn : "{900D62CF65FB7496}Prefabs/Structures/KOTH/Camp_Indfor.et" {
+ coords 4695.696 71.964 8782.616
+ angleX 0.199
+ angleY -140.762
+ angleZ 0.001
+ {
+  CommentEntity {
+   ID "5E1F523F83705171"
+   coords 882.19 -46.452 -441.1
+  }
+ }
+}

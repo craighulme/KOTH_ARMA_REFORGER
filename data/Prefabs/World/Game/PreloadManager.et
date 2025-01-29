@@ -1,0 +1,65 @@
+BasePreloadManager {
+ ID "52F2DA9A9C3FF367"
+ PrefabsToPreload {
+  PreloadEntry "{5E2CD743061F87EA}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD743065A030A}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD74306AEDE58}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD74306B00304}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD7430699A0D7}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD74306E2868C}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD74306F2858A}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD74306C491D5}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD7435C829248}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD7435D385C67}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD7435D74A991}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD7435DAD188B}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD7435DB5DDBE}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD7435B40499F}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD7434D95B53B}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{5E2CD743418D4EF9}" {
+   FullyPreload 0
+  }
+  PreloadEntry "{60DB39BAF8DC8A5B}" {
+   Prefab "{7C98AF3D5AB4A519}Prefabs/Characters/Factions/KOTH_Base/Character_KOTH_BLUFOR.et"
+   FullyPreload 1
+  }
+  PreloadEntry "{60DB39BAF2BDDFAB}" {
+   Prefab "{E1E2BA75E5E2E4CE}Prefabs/Characters/Factions/KOTH_Base/Character_KOTH_INDFOR.et"
+   FullyPreload 1
+  }
+  PreloadEntry "{60DB39BAE7AFB095}" {
+   Prefab "{4A513974D5682D30}Prefabs/Characters/Factions/KOTH_Base/Character_KOTH_OPFOR.et"
+   FullyPreload 1
+  }
+ }
+}

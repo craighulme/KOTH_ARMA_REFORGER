@@ -1,0 +1,320 @@
+VerticalLayoutWidgetClass {
+ Name "rootFrame"
+ Slot AlignableSlot "{5CE87A33470B7EBD}" {
+  VerticalAlign 0
+  Padding 25 15 25 0
+ }
+ {
+  SizeLayoutWidgetClass "{5E12ADFAAFDDFBDA}" {
+   Name "TitleSizeLayout"
+   Slot LayoutSlot "{5CE280835863C694}" {
+   }
+   AllowMinDesiredWidth 1
+   MinDesiredWidth 400
+   AllowMinDesiredHeight 1
+   MinDesiredHeight 27.5
+   AllowMaxDesiredWidth 1
+   MaxDesiredWidth 400
+   AllowMaxDesiredHeight 1
+   MaxDesiredHeight 20
+   {
+    RichTextWidgetClass "{5E12ADFAAFDDFBD8}" {
+     Name "TitleText"
+     Slot AlignableSlot "{5CE280835E438789}" {
+      HorizontalAlign 0
+      VerticalAlign 0
+     }
+     Color 0.235 0.235 0.235 1
+     Text "Introduction"
+     "Font Size" 16
+     "Min Font Size" 16
+     FontProperties FontProperties "{5CDC7A3BDCA64640}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+     }
+    }
+   }
+  }
+  SizeLayoutWidgetClass "{5E12ADFAAFDDFBD6}" {
+   Name "ContentSizeLayout"
+   Slot LayoutSlot "{5CE28083AC47B59C}" {
+    HorizontalAlign 0
+    VerticalAlign 0
+   }
+   AllowMinDesiredWidth 1
+   MinDesiredWidth 400
+   AllowMinDesiredHeight 1
+   MinDesiredHeight 600
+   AllowMaxDesiredWidth 1
+   MaxDesiredWidth 400
+   AllowMaxDesiredHeight 1
+   MaxDesiredHeight 600
+   {
+    VerticalLayoutWidgetClass "{5E12ADFAAFDDFBD4}" {
+     Name "ContentVertical"
+     Slot AlignableSlot "{5CE28083ADF4A944}" {
+      HorizontalAlign 3
+      VerticalAlign 0
+      Padding 0 5 0 0
+     }
+     {
+      SizeLayoutWidgetClass "{5E12ADFAAFDDFBD5}" {
+       Name "ImageSizeLayout"
+       Slot LayoutSlot "{5D7487B8B85C04A8}" {
+        HorizontalAlign 1
+        VerticalAlign 1
+        Padding 0 0 0 0
+        FillWeight 2
+       }
+       AllowWidthOverride 1
+       WidthOverride 386
+       AllowHeightOverride 1
+       HeightOverride 268
+       {
+        FrameWidgetClass "{5E12ADFAAFDDFBD3}" {
+         Name "PhotoOverlay"
+         Slot AlignableSlot "{5D7487B8B868C37B}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+          Padding 0 0 0 0
+         }
+         {
+          ImageWidgetClass "{5E12ADFAAFDDFBD1}" {
+           Name "PhotoFrame"
+           Slot FrameWidgetSlot "{552A9210BF199A26}" {
+            Anchor 0 0 1 1
+            PositionX 0
+            OffsetLeft 0
+            PositionY 0
+            OffsetTop 0
+            SizeX -668
+            OffsetRight 0
+            SizeY -510
+            OffsetBottom 0
+           }
+           Texture "{DA47F84ABED3F164}UI/Textures/LoadingScreen/Photos-asset_UI.edds"
+           Image ""
+           Size 1160 816
+          }
+          ScaleWidgetClass "{5E12ADFAAFDDFA2E}" {
+           Name "Scale0"
+           Slot FrameWidgetSlot "{552A7A06FF8F35BC}" {
+            Anchor 0.07 0.12 0.93 0.865
+            PositionX 0
+            OffsetLeft 0
+            PositionY 0
+            OffsetTop 0
+            SizeX 9.207
+            OffsetRight 0
+            SizeY 0
+            OffsetBottom 0
+           }
+           Clipping True
+           "Scale Mode" "Scale to fill"
+           {
+            ImageWidgetClass "{5E12ADFAAFDDFA2C}" {
+             Name "ImageWidget"
+             Slot AlignableSlot "{552A7A06FF83E414}" {
+             }
+             Clipping False
+             Rotation 0
+             Texture "{FB84DD112A84AB32}UI/Textures/LoadingScreen/PlaceholderScenery_UI.edds"
+             Image ""
+             Size 3840 2160
+             "Transition width" 0.412
+             Progress 0.352
+             Range 0.372
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      SizeLayoutWidgetClass "{5E12ADFAAFDDFA2D}" {
+       Name "TitleSizeLayout"
+       Slot LayoutSlot "{5CE87A09FD5EEC43}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+        Padding 0 12.5 0 0
+       }
+       AllowWidthOverride 1
+       WidthOverride 450
+       AllowMaxDesiredWidth 1
+       MaxDesiredWidth 450
+       AllowMaxDesiredHeight 1
+       MaxDesiredHeight 450
+       {
+        RichTextWidgetClass "{5E12ADFAAFDDFA2B}" {
+         Name "TitleText"
+         Slot AlignableSlot "{5CE87A09EB535945}" {
+          HorizontalAlign 0
+          Padding 12.5 0 12.5 0
+         }
+         Text "#AR-BriefingCampaign_VictoryCondition_01"
+         "Font Size" 22
+         "Min Font Size" 22
+         FontProperties FontProperties "{5CDC7A3BF0A43B69}" {
+          Font "{CD2634D279AB011A}UI/Fonts/Roboto/Roboto_Bold.fnt"
+         }
+        }
+       }
+      }
+      SizeLayoutWidgetClass "{5E12ADFAAFDDFA28}" {
+       Name "SizeLayout0"
+       Slot LayoutSlot "{5CE87A0887010CB1}" {
+        HorizontalAlign 1
+        VerticalAlign 1
+        Padding 0 12.5 0 0
+       }
+       AllowMinDesiredWidth 1
+       MinDesiredWidth 450
+       AllowMinDesiredHeight 1
+       MinDesiredHeight 400
+       AllowMaxDesiredWidth 1
+       MaxDesiredWidth 450
+       AllowMaxDesiredHeight 1
+       MaxDesiredHeight 375
+       {
+        RichTextWidgetClass "{5E12ADFAAFDDFA26}" {
+         Name "DescriptionText"
+         Slot AlignableSlot "{5CE87A08ABCBD26A}" {
+          HorizontalAlign 0
+          VerticalAlign 3
+          Padding 12.5 0 12.5 0
+         }
+         Text "Secure Everon by taking control of several key locations. Such as Base Lamentin or Morton. This can be only achieved by seizing other strategic sites, cutting off logistics and sufficiently expanding your presence on the battlefield."
+         "Font Size" 18
+         "Min Font Size" 18
+         Wrap 1
+         FontProperties FontProperties "{5CDC7A2422DA1C26}" {
+          Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+         }
+         "Line Spacing" 25
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  SizeLayoutWidgetClass "{5E12ADFAAFDDFA27}" {
+   Name "BottomTitleSizeLayout"
+   Slot LayoutSlot "{5CE28083F704C3D0}" {
+    HorizontalAlign 0
+    VerticalAlign 0
+   }
+   AllowMinDesiredWidth 1
+   MinDesiredWidth 400
+   AllowMinDesiredHeight 1
+   MinDesiredHeight 27.5
+   AllowMaxDesiredWidth 1
+   MaxDesiredWidth 400
+   AllowMaxDesiredHeight 1
+   MaxDesiredHeight 27.5
+   {
+    HorizontalLayoutWidgetClass "{5E12ADFAAFDDFA22}" {
+     Name "Pagination"
+     Slot AlignableSlot "{5CE87A043A3EBA82}" {
+     }
+     "Fill Origin" Center
+     {
+      ButtonWidgetClass "{5E12ADFAAFDDFA20}" : "{320A4B34692A1E7E}UI/layouts/WidgetLibrary/Buttons/WLib_PagingButton.layout" {
+       Name "PrevButton"
+       Slot LayoutSlot "{55367D828DA1E57B}" {
+        HorizontalAlign 1
+        VerticalAlign 1
+       }
+       components {
+        SCR_PagingButtonComponent "{547485B3AA82B840}" {
+         m_BackgroundDefault 0.76 0.392 0.078 0
+         m_BackgroundHovered 0.896 0.539 0.184 0
+         m_BackgroundSelected 0.896 0.539 0.184 0
+         m_BackgroundSelectedHovered 0.896 0.539 0.184 0
+         m_BackgroundClicked 0.896 0.539 0.184 0
+         m_bIsPositive 0
+         m_sActionName "MenuTabLeft"
+        }
+       }
+       {
+        SizeLayoutWidgetClass "{54A0782A39F09C6C}" {
+         Prefab "{54A0782A39F09C6C}"
+         WidthOverride 32
+         HeightOverride 32
+         {
+          OverlayWidgetClass "{000000005E70868E}" {
+           Prefab "{000000005E70868E}"
+           {
+            RichTextWidgetClass "{553D05660AD2BC8E}" {
+             Prefab "{553D05660AD2BC8E}"
+             Text "<action name=\"MenuTabLeft\"/>"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      SizeLayoutWidgetClass "{5E12ADFAAFDDFA3C}" {
+       Prefab "{5D52652E25BAAA2E}"
+       Name "SizeLayout"
+       Slot LayoutSlot "{5D6C9E72C387EB2E}" {
+       }
+       {
+        HorizontalLayoutWidgetClass "{5E12ADFAAFDDFA3D}" {
+         Prefab "{5D52652E25BAAA2C}"
+         Name "Pages"
+         Slot AlignableSlot "{5D6C66E9D4CB9ED0}" {
+         }
+         components {
+          SCR_SelectionHintComponent "{5D6C66F61A9DC260}" {
+           m_sHintElementTexture ""
+           m_fItemWidth 23
+           m_fItemHeight 4
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass "{5E12ADFAAFDDFA3B}" : "{320A4B34692A1E7E}UI/layouts/WidgetLibrary/Buttons/WLib_PagingButton.layout" {
+       Name "NextButton"
+       Slot LayoutSlot "{55367D828DA1E57B}" {
+       }
+       components {
+        SCR_PagingButtonComponent "{547485B3AA82B840}" {
+         m_BackgroundDefault 0.76 0.392 0.078 0
+         m_BackgroundHovered 0.896 0.539 0.184 0
+         m_BackgroundSelected 0.896 0.539 0.184 0
+         m_BackgroundSelectedHovered 0.896 0.539 0.184 0
+         m_BackgroundClicked 0.896 0.539 0.184 0
+         m_sActionName "MenuTabRight"
+        }
+       }
+       {
+        SizeLayoutWidgetClass "{54A0782A39F09C6C}" {
+         Prefab "{54A0782A39F09C6C}"
+         Slot ButtonWidgetSlot "{5452C531C2876D63}" {
+          HorizontalAlign 1
+          VerticalAlign 1
+         }
+         WidthOverride 32
+         HeightOverride 32
+         {
+          OverlayWidgetClass "{000000005E70868E}" {
+           Prefab "{000000005E70868E}"
+           {
+            RichTextWidgetClass "{553D05660AD2BC8E}" {
+             Prefab "{553D05660AD2BC8E}"
+             Text "<action name=\"MenuTabRight\"/>"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

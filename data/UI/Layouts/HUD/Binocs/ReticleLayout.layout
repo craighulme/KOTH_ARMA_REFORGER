@@ -1,0 +1,19 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  CanvasWidgetClass "{6208FDF3AF987ADC}" {
+   Name "ReticleCanvas"
+   Slot FrameWidgetSlot "{6208FDF3AF987AB5}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -60
+    OffsetLeft -60
+    PositionY -38
+    OffsetTop -38
+    SizeX 121
+    OffsetRight -61
+    SizeY 78
+    OffsetBottom -40
+   }
+  }
+ }
+}

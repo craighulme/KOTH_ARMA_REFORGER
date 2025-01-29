@@ -1,0 +1,34 @@
+FrameWidgetClass {
+ Name "ItemLine"
+ Slot LayoutSlot "{60FA9458D5A6F6D6}" {
+ }
+ {
+  TextWidgetClass "{60FA945CCC2AC974}" {
+   Name "Name"
+   Slot FrameWidgetSlot "{60FA9458D6E8816C}" {
+    PositionX 3.095
+    OffsetLeft 3.095
+    PositionY 1.548
+    OffsetTop 1.548
+    SizeX 199.999
+    OffsetRight -203.095
+    SizeY 30
+    OffsetBottom -31.548
+   }
+   Text "nothing"
+  }
+  TextWidgetClass "{60FA9458C670551C}" {
+   Name "Price"
+   Slot FrameWidgetSlot "{60FA9458D6E8816C}" {
+    Anchor 1 0 1 1
+    PositionX -100
+    OffsetLeft -100
+    PositionY 0.774
+    OffsetRight 0
+    SizeY 0
+    OffsetBottom 0
+   }
+   Text "0"
+  }
+ }
+}

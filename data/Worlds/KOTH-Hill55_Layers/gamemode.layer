@@ -1,0 +1,28 @@
+SCR_BaseGameMode KOTH_GameMode1 : "{E5118D0809DD3CDF}Prefabs/MP/Modes/KOTH_GameMode.et" {
+ coords 232.326 1.437 2248.261
+}
+KOTH_PresenceTriggerEntity : "{F9467A5734030343}Prefabs/MP/Triggers/KOTH_zoneTrigger.et" {
+ coords 1182.992 84.098 1840.758
+ angleX 0
+ angleZ 0
+ SphereRadius 120
+}
+SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{6268C42AEEF7769F}" {
+     NavmeshFile "{3DF554C803ADC8CC}Worlds/Navmesh/KhanhTrung.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5C8C9B750D124A63}" {
+   NavmeshSettings NavmeshWorld "{5C8C9B750B60C6E2}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5C90BD0EC793647D}" {
+     NavmeshFile "{A3485AA071F7F3DA}Worlds/Navmesh/KhanhTrungLow.nmn"
+    }
+   }
+  }
+ }
+ coords 3762.261 14.133 2429.691
+}

@@ -1,0 +1,79 @@
+FrameWidgetClass {
+ Name "repairZoneRootFrame"
+ {
+  FrameWidgetClass "{60F4BDA6FA797B9B}" {
+   Name "background"
+   Slot FrameWidgetSlot "{60F4BDA6FA797BB2}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -300
+    OffsetLeft -300
+    PositionY -100
+    OffsetTop -100
+    SizeX 600
+    OffsetRight -300
+    SizeY 200
+    OffsetBottom -100
+   }
+   {
+    ImageWidgetClass "{60F50B1D25951B1A}" {
+     Name "BgImage0"
+     Slot FrameWidgetSlot "{60F4BDA79590FFA6}" {
+      OffsetLeft 0
+      OffsetTop 0
+      SizeX 600
+      OffsetRight -600
+      SizeY 200
+      OffsetBottom -200
+     }
+     Opacity 0.81
+     Color 0 0 0 1
+     Texture "{7DE73FC8A57B6A2D}UI/Textures/QuickMenu/backgroundNoise.edds"
+     Size 95 95
+    }
+   }
+  }
+  FrameWidgetClass "{60F50B1DD3401BCF}" {
+   Name "background0"
+   Slot FrameWidgetSlot "{60F4BDA6FA797BB2}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -250
+    OffsetLeft -250
+    PositionY -50
+    OffsetTop -50
+    SizeX 500
+    OffsetRight -250
+    SizeY 100
+    OffsetBottom -50
+   }
+   {
+    RichTextWidgetClass "{60F50B1DD3401BCD}" {
+     Name "Title"
+     Slot FrameWidgetSlot "{60F4BDA7D1CB4112}" {
+      OffsetLeft 0
+      OffsetTop 0
+      SizeX 500
+      OffsetRight -500
+      SizeY 50
+      OffsetBottom -50
+     }
+     Text "Repair In Progress ..."
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+    }
+    ProgressBarWidgetClass "{60F50B1DD3401BCC}" {
+     Name "ProgressBar"
+     Slot FrameWidgetSlot "{60F4BDA7EEB9FF0F}" {
+      OffsetLeft 0
+      PositionY 50
+      OffsetTop 50
+      SizeX 500
+      OffsetRight -500
+      SizeY 50
+      OffsetBottom -100
+     }
+     Current 0
+    }
+   }
+  }
+ }
+}

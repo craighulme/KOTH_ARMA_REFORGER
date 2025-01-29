@@ -1,0 +1,209 @@
+ButtonWidgetClass {
+ Name "Tile"
+ Slot AlignableSlot "{5548E6E7EED73BC0}" {
+  Padding 0 0 50 0
+ }
+ Opacity 0.9
+ components {
+  SCR_TileBaseComponent "{585687D6F2E04F4B}" {
+   m_ColorSelected 0 0 0 0
+   m_ColorDeselected 0 0 0 0.784
+   m_sContentName "Foreground"
+  }
+ }
+ style blank
+ {
+  OverlayWidgetClass "{610D2C5C1EDE865B}" {
+   Name "Overlay0"
+   Slot ButtonWidgetSlot "{585687E8D954C0BD}" {
+   }
+   {
+    SizeLayoutWidgetClass "{610D2C5C1EDE8659}" {
+     Name "SizeLayout"
+     Slot OverlayWidgetSlot "{585687E8D9AB541A}" {
+     }
+     Clipping False
+     AllowWidthOverride 1
+     WidthOverride 400
+     AllowHeightOverride 1
+     HeightOverride 312
+     {
+      OverlayWidgetClass "{610D2C5C1EDE8656}" {
+       Name "Overlay"
+       Slot ButtonWidgetSlot "{5548E6E7F213FB11}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+        Padding 0 0 0 0
+       }
+       {
+        ImageWidgetClass "{610D2C5C1EDE8654}" {
+         Name "Background"
+         Slot OverlayWidgetSlot "{5548E6E7DF4EE313}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         Size 4 4
+        }
+        VerticalLayoutWidgetClass "{610D2C5C1EDE8652}" {
+         Name "VerticalLayout0"
+         Slot OverlayWidgetSlot "{5588C2B20312AF98}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         {
+          OverlayWidgetClass "{610D2C5C1EDE8653}" {
+           Name "Overlay1"
+           Slot LayoutSlot "{558EB3BB6A1EC204}" {
+           }
+           {
+            ScaleWidgetClass "{610D2C5C1EDE8651}" {
+             Name "Scale0"
+             Slot OverlayWidgetSlot "{558EB3BB5D1B10FC}" {
+              VerticalAlign 0
+             }
+             Clipping True
+             {
+              ImageWidgetClass "{610D2C5C1EDE86AE}" {
+               Name "MapImage"
+               Slot AlignableSlot "{55589476CBD910FF}" {
+                HorizontalAlign 0
+                VerticalAlign 0
+               }
+               Texture "{A376FAD52C492EBB}Art/Missions/Beauregard_scen.edds"
+               Size 1920 1200
+              }
+             }
+            }
+           }
+          }
+          OverlayWidgetClass "{610D2C5C1EDE86AC}" {
+           Name "Overlay0"
+           Slot LayoutSlot "{5588C2B1D059DB2F}" {
+            FillWeight 0.4
+           }
+           {
+            ImageWidgetClass "{610D2C5C1EDE86AB}" {
+             Name "Image0"
+             Slot OverlayWidgetSlot "{585687C26085745A}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             Color 0 0 0 0.973
+             Size 32 62
+            }
+            VerticalLayoutWidgetClass "{610D2C5C1EDE86A8}" {
+             Name "VerticalLayout0"
+             Slot OverlayWidgetSlot "{5588C2B1D14F4B11}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+              Padding 20 5 20 5
+             }
+             {
+              OverlayWidgetClass "{610D2C5C1EDE86A6}" {
+               Name "Overlay0"
+               Slot LayoutSlot "{558E4CB3AF147085}" {
+                HorizontalAlign 1
+                VerticalAlign 1
+                SizeMode Fill
+               }
+               {
+                HorizontalLayoutWidgetClass "{610D2C5C1EDE86A7}" {
+                 Name "HorizontalLayout0"
+                 Slot OverlayWidgetSlot "{558E4CB38AB5D991}" {
+                  HorizontalAlign 3
+                  VerticalAlign 3
+                 }
+                 {
+                  TextWidgetClass "{610D2C5C1EDE86A5}" {
+                   Name "MapTitle"
+                   Slot LayoutSlot "{558E4CB38BCEA6C1}" {
+                    HorizontalAlign 1
+                    VerticalAlign 1
+                    SizeMode Fill
+                   }
+                   Text "map_title"
+                   "Font Size" 25
+                   "Min Font Size" 25
+                   "Horizontal Alignment" Center
+                   "Vertical Alignment" Center
+                   Wrap 1
+                   FontProperties FontProperties "{558E4CA24F4EE5E7}" {
+                    Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+                   }
+                  }
+                  RichTextWidgetClass "{610D2C5C1EDE86A2}" {
+                   Name "VoteCount"
+                   Slot LayoutSlot "{558E4CB38525B581}" {
+                    HorizontalAlign 2
+                    VerticalAlign 1
+                    SizeMode Fill
+                   }
+                   "Is Enabled" 0
+                   "Is Visible" 0
+                   Text "0"
+                   "Font Size" 20
+                   "Min Font Size" 20
+                   FontProperties FontProperties "{558E4CB5AD2A9EFA}" {
+                    Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                   }
+                  }
+                  ImageWidgetClass "{610D2C5C1EDE86A0}" {
+                   Name "Image0"
+                   Slot LayoutSlot "{558E4CB599B10A10}" {
+                    HorizontalAlign 2
+                   }
+                   "Is Enabled" 0
+                   "Is Visible" 0
+                   Texture "{2EFEA2AF1F38E7F0}UI/Textures/Icons/icons_wrapperUI-64.imageset"
+                   Image "player"
+                   Size 32 32
+                  }
+                  TextWidgetClass "{612EF5B0DA1C54CC}" {
+                   Name "MapConf"
+                   Slot LayoutSlot "{558E4CB38BCEA6C1}" {
+                    HorizontalAlign 1
+                    VerticalAlign 1
+                    SizeMode Fill
+                   }
+                   "Is Visible" 0
+                   Text ""
+                   "Font Size" 25
+                   "Min Font Size" 25
+                   FontProperties FontProperties "{558E4CA24F4EE5E7}" {
+                    Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+        PanelWidgetClass "{610D2C5C1EDE86B4}" {
+         Name "Border"
+         Slot OverlayWidgetSlot "{5548E6E7D859FCD2}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         Color 0.761 0.392 0.078 1
+         style outline_2px
+        }
+       }
+      }
+     }
+    }
+    ImageWidgetClass "{610D2C5C1EDE86B2}" {
+     Name "Foreground"
+     Slot OverlayWidgetSlot "{585687E8D5FD14C5}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+    }
+   }
+  }
+ }
+}

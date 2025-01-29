@@ -1,0 +1,29 @@
+GenericEntity : "{986F38072A8DD563}Prefabs/Props/Garbage/Generic/Junk_01/Junk_01_single_planks.et" {
+ coords 3561.754 46.952 2644.256
+ angleX 90
+ angleZ -75
+}
+GenericEntity : "{B8185BFEEFD58533}Prefabs/Props/Infrastructure/ConeTraffic/ConeTraffic_01_stack.et" {
+ coords 3565.89 68.973 2645.084
+ scale 23
+}
+$grp GenericEntity : "{B956CCBC147690A4}Prefabs/MP/Triggers/KOTH_RepairZoneTrigger.et" {
+ {
+  coords 3448.149 41.028 2602.66
+  angleX 1.233
+  angleY -105.021
+  angleZ -1.269
+ }
+ {
+  coords 2938.402 56.453 2184.224
+  angleX 9.231
+  angleY -150.295
+  angleZ -7.154
+ }
+ {
+  coords 2744.179 26.667 3143.897
+  angleX 0.471
+  angleY -24.536
+  angleZ -4.299
+ }
+}

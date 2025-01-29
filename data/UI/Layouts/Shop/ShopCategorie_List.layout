@@ -1,0 +1,51 @@
+ButtonWidgetClass {
+ Name "ShopCategorie"
+ Slot AlignableSlot "{5E2AEA0E3CFA177B}" {
+  HorizontalAlign 3
+  VerticalAlign 3
+  Padding 2 2 2 2
+ }
+ Clipping False
+ Color 0 0 0 0
+ components {
+  SCR_ButtonBaseComponent "{5E2AEA0EEE2A32F4}" {
+   m_BackgroundDefault 1 1 1 0
+   m_BackgroundHovered 0 0.502 0.125 0.314
+   m_bShowBorderOnFocus 0
+  }
+ }
+ {
+  OverlayWidgetClass "{5E2AEA0EC011138E}" {
+   Name "Overlay"
+   Slot ButtonWidgetSlot "{5E2AEA0EC01113FD}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   {
+    ImageWidgetClass "{5E2AEA0EC8347706}" {
+     Name "Background"
+     Slot OverlayWidgetSlot "{5E2AEA0EC834777C}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Color 0 0 0 0.49
+    }
+    TextWidgetClass "{5E2AEA0E4887BC72}" : "{A6E079574AACF9A0}UI/layouts/WidgetLibrary/TextWidgets/Text_Interactive.layout" {
+     Name "Content"
+     Slot OverlayWidgetSlot "{5E2AEA0E4887BCAC}" {
+     }
+     Text "WEAPONS"
+     "Font Size" 30
+     "Min Font Size" 24
+     FontProperties FontProperties "{546AF489DFD25402}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      Bold 1
+      ShadowSize 16
+      ShadowOffset 3 3
+      ShadowOpacity 0.5
+     }
+    }
+   }
+  }
+ }
+}

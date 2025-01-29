@@ -1,0 +1,156 @@
+GenericEntity KOTH_FirstSpawn : "{0D777787DAAD3541}Prefabs/Structures/KOTH/Camp_Blufor.et" {
+ coords 3519.693 38.462 2588.422
+ angleY -15
+ {
+  GenericEntity {
+   ID "5E1EFBF8517E6665"
+   components {
+    ActionsManagerComponent "{5E1918326AE57A59}" {
+     ActionContexts {
+      UserActionContext "{5E191831955126FB}" {
+       Radius 2
+      }
+     }
+    }
+   }
+  }
+  GenericEntity {
+   components {
+    SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+     m_eSupportedArsenalItemModes 68
+    }
+   }
+  }
+  KOTH_SpawnProtectionTriggerEntity {
+   ID "5E2B41CBCBA3E35B"
+   coords -43.649 0 16.018
+  }
+ }
+}
+GenericEntity KOTH_SecondSpawn : "{108B69D9D8DDE8B0}Prefabs/Structures/KOTH/Camp_Opfor.et" {
+ coords 2934.887 57.344 2231.423
+ angleY -87.644
+ {
+  SCR_SpawnPoint {
+   ID "5E1F523DF4404F54"
+  }
+ }
+}
+GenericEntity : "{1DA733029CA1D572}PrefabLibrary/Infrastructure/Sings/SignAheadOnly.et" {
+ coords 2837.522 36.91 3172.516
+ angleX -1.271
+ angleZ 1.611
+ {
+  GenericEntity {
+   ID "569AF6010C50CB5E"
+   coords 0 0 0
+   angleZ 90
+   scale 2.05
+  }
+ }
+}
+$grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+ KOTH_FirstVehicleSpawn {
+  coords 3496.151 37.721 2581.486
+  angleX -7.882
+  angleY -90.992
+  angleZ 7.193
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    vehicleSpawnFirst2 {
+     coords 25.864 7.697 5.704
+     angleX -0.948
+     angleY 0.538
+     angleZ -5.324
+     ShapeColor 1 0 0 0.118
+    }
+    vehicleSpawnFirst3 {
+     coords 1.585 5.828 24.118
+     angleX 3.576
+     angleY 0.276
+     angleZ 1.774
+     ShapeColor 1 0 0 0.118
+    }
+   }
+  }
+ }
+ KOTH_SecondVehicleSpawn {
+  coords 2923.51 57.395 2216.63
+  angleX 6.849
+  angleY -79.587
+  angleZ 2.158
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    vehicleSpawnFirst10 {
+     coords 2.32 -1.688 -20.287
+     angleX 15.14
+     angleY 2.296
+     angleZ 8.408
+    }
+    vehicleSpawnFirst11 {
+     coords -19.718 0.85 6.217
+     angleX -8.649
+     angleY -2.652
+     angleZ 11.965
+    }
+   }
+  }
+ }
+ KOTH_ThirdVehicleSpawn {
+  coords 2817.092 36.725 3175.763
+  angleY -79.772
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    vehicleSpawnFirst12 {
+     coords -5.983 -1.087 18.983
+    }
+    vehicleSpawnFirst13 {
+     coords -14.19 -3.016 38.239
+    }
+   }
+  }
+ }
+}
+$grp GenericEntity : "{67EE7343073E3AF4}Prefabs/Systems/AmbientVehicles/AmbientVehicleSpawnpoint_US.et" {
+ KOTH_FirstFreeTruck {
+  coords 3513.442 39.323 2605.863
+  angleY -30
+ }
+ KOTH_SecondFreeTruck {
+  coords 2925.432 56.304 2243.999
+ }
+ KOTH_ThirdFreeTruck {
+  coords 2843.803 37.272 3168.818
+  angleY 90
+ }
+}
+GenericEntity KOTH_ThirdSpawn : "{900D62CF65FB7496}Prefabs/Structures/KOTH/Camp_Indfor.et" {
+ coords 2827.25 37.742 3189.837
+ angleY -180
+ {
+  GenericEntity {
+   ID "5E1EFBF8219E9CE4"
+   components {
+    MeshObject "{5872F0EB7FA40561}" {
+     Materials {
+      MaterialAssignClass "{52D485D9F95DCA5D}" {
+       SourceMaterial "CabinetMetal_01"
+       AssignedMaterial "{08796045188EBD49}Assets/Props/Furniture/CabinetMetal_01/Data/CabinetMetal_01_olive_KOTH.emat"
+      }
+      MaterialAssignClass "{54D6838AB2CF52C8}" {
+       SourceMaterial "Color_palette"
+       AssignedMaterial "{40F12B1BDC73F38E}Common/Materials/ColorPalette/Color_palette_01_LEMON_12_S1_R2.emat"
+      }
+     }
+    }
+   }
+  }
+  KOTH_SpawnProtectionTriggerEntity {
+   ID "5E2B41CBEF0E4D7F"
+   coords 3.551 0 -47.487
+  }
+  SCR_SpawnPoint {
+   ID "5E1F523DC7E00B89"
+  }
+ }
+}

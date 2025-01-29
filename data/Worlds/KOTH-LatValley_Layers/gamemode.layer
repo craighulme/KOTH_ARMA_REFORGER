@@ -1,0 +1,60 @@
+SCR_BaseGameMode KOTH_GameMode : "{E5118D0809DD3CDF}Prefabs/MP/Modes/KOTH_GameMode.et" {
+ coords 1149.893 12.737 317.863
+}
+GenericEntity : "{2D2700412F741B2A}Prefabs/Structures/KOTH/ArmaTowerReforged_KOTH_3.et" {
+ coords 1160.506 51.979 577.527
+}
+SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{6268C42AEEF7769F}" {
+     NavmeshFile "{3DF554C803ADC8CC}Worlds/Navmesh/KhanhTrung.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5C8C9B750D124A63}" {
+   NavmeshSettings NavmeshWorld "{5C8C9B750B60C6E2}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5C90BD0EC793647D}" {
+     NavmeshFile "{A3485AA071F7F3DA}Worlds/Navmesh/KhanhTrungLow.nmn"
+    }
+   }
+  }
+ }
+ coords 3762.261 14.133 2429.691
+}
+GenericEntity : "{9FFB7FFA1B700ED8}Prefabs/Structures/KOTH/ArmaTowerReforged_KOTH_1.et" {
+ coords 1207.984 19.75 222.357
+ angleY 90
+}
+$grp GenericEntity : "{B956CCBC147690A4}Prefabs/MP/Triggers/KOTH_RepairZoneTrigger.et" {
+ KOTH_RepairZoneTrigger_1 {
+  coords 519.332 3.458 2130.663
+  angleX -3.904
+  angleY -164.897
+ }
+ KOTH_RepairZoneTrigger_3 {
+  coords 2549.807 3.233 1559.266
+  angleY 43.155
+ }
+ KOTH_RepairZoneTrigger_2 {
+  coords 3191.639 10.177 280.361
+  angleY -165.69
+ }
+}
+GenericEntity : "{C8BB4CB823918C41}Prefabs/Structures/KOTH/ArmaTowerReforged_KOTH_2.et" {
+ coords 988.078 27.616 375.019
+ angleY -109.76
+}
+KOTH_PresenceTriggerEntity KOTH_ZoneTrigger : "{F9467A5734030343}Prefabs/MP/Triggers/KOTH_zoneTrigger.et" {
+ coords 1173.395 18.129 412.077
+ angleX 0
+ angleZ 0
+ SphereRadius 205
+ {
+  KOTH_PriorityAreaPresenceTriggerEntity {
+   ID "60B4DB5F4B905473"
+   SphereRadius 35
+  }
+ }
+}

@@ -1,0 +1,26 @@
+FrameWidgetClass {
+ {
+  OverlayWidgetClass "{5DB8B556919FE5F2}" {
+   Prefab "{5DB8B556919FE5F2}"
+   {
+    VerticalLayoutWidgetClass "{5DB8B556919FE5EE}" {
+     Prefab "{5DB8B556919FE5EE}"
+     {
+      ButtonWidgetClass "{60F956F22C985C77}" : "{131B0F3B8927CED1}UI/Layouts/Player_Menu/PlayerMenu_prefab.layout" {
+       Name "PlayerMenu"
+       Slot LayoutSlot "{557478C3F0230865}" {
+       }
+      }
+      ButtonWidgetClass "{5DB8B556919FE5ED}" {
+       Prefab "{5DB8B556919FE5ED}"
+       components {
+        SCR_ButtonTextComponent "{5548F0143AE99095}" {
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

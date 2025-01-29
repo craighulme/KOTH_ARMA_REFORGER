@@ -1,0 +1,29 @@
+SCR_BaseGameMode KOTH_GameMode1 : "{E5118D0809DD3CDF}Prefabs/MP/Modes/KOTH_GameMode.et" {
+ coords 4015.668 137.249 7256.629
+}
+GenericEntity : "{2D2700412F741B2A}Prefabs/Structures/KOTH/ArmaTowerReforged_KOTH_3.et" {
+ coords 2312.319 165.631 1316.7
+ angleY -15
+}
+GenericEntity : "{9FFB7FFA1B700ED8}Prefabs/Structures/KOTH/ArmaTowerReforged_KOTH_1.et" {
+ coords 2136.819 164.179 1244.645
+ angleY -28.873
+}
+GenericEntity : "{C8BB4CB823918C41}Prefabs/Structures/KOTH/ArmaTowerReforged_KOTH_2.et" {
+ coords 1935.721 166.812 1761.403
+ angleY 135
+}
+GenericEntity : "{F58F698056FD0576}Prefabs/Structures/KOTH/ArmaTowerReforged_KOTH_5.et" {
+ coords 2119.018 166.469 1819.284
+}
+KOTH_PresenceTriggerEntity : "{F9467A5734030343}Prefabs/MP/Triggers/KOTH_zoneTrigger.et" {
+ coords 2132.255 171.554 1562.24
+ SphereRadius 250
+ {
+  KOTH_PriorityAreaPresenceTriggerEntity {
+   ID "60B4DB5F4B905473"
+   coords 0 0 0
+   SphereRadius 25
+  }
+ }
+}

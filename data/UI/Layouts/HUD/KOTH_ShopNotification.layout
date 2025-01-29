@@ -1,0 +1,92 @@
+HorizontalLayoutWidgetClass {
+ Name "KOTH_ShopNotification"
+ Slot OverlayWidgetSlot "{5E2F4B66D95E8F73}" {
+  HorizontalAlign 3
+  VerticalAlign 3
+  Padding 0 10 0 0
+ }
+ components {
+  SCR_FadeUIComponent "{5E2F4B6585C49268}" {
+  }
+ }
+ {
+  VerticalLayoutWidgetClass "{5E2F4B610AA67B13}" {
+   Name "VerticalLayout0"
+   Slot LayoutSlot "{5E2F4B610AA67B5E}" {
+    Padding 0 15 0 0
+    SizeMode Fill
+   }
+   {
+    HorizontalLayoutWidgetClass "{5E2F4B675E7E593E}" {
+     Name "HorizontalLayout0"
+     Slot LayoutSlot "{5E2F4B675E7E5913}" {
+      SizeMode Fill
+     }
+     {
+      ScaleWidgetClass "{5E2F4B6483867B9B}" {
+       Name "Scale0"
+       Slot LayoutSlot "{5E2F4B6483867BF3}" {
+        VerticalAlign 2
+        SizeMode Fill
+       }
+       {
+        OverlayWidgetClass "{5E2F4B648F1731E5}" {
+         Name "Overlay0"
+         Slot AlignableSlot "{5E2F4B648F1731C4}" {
+         }
+         {
+          ImageWidgetClass "{5E2F4B6777D89FD0}" {
+           Name "Image1"
+           Slot OverlayWidgetSlot "{5E2F77CFBFA255CB}" {
+            HorizontalAlign 1
+            VerticalAlign 1
+           }
+           Color 0.761 0.392 0.078 1
+           Texture "{1872FFA1133724A2}UI/Textures/Chat/chat.imageset"
+           Image "system"
+           Size 32 32
+           "Shadow Offset" 1 1
+           "Shadow Color" 0 0 0 0.49
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    TextWidgetClass "{5E2F4B66BF543CD6}" {
+     Name "First"
+     Slot LayoutSlot "{5E2F4B66BF543F04}" {
+      Padding 0 0 0 0
+     }
+     Text "Notification"
+     "Font Size" 20
+     "Min Font Size" 20
+     "Horizontal Alignment" Center
+    }
+    TextWidgetClass "{5E2F4B6179B53D02}" {
+     Name "Seconde"
+     Slot LayoutSlot "{5E2F4B6179B53D75}" {
+      Padding 0 15 0 0
+      SizeMode Fill
+     }
+     Text "Vous ne pouvez pas acheter l'arme"
+     "Font Size" 20
+     "Min Font Size" 20
+     "Horizontal Alignment" Center
+    }
+    TextWidgetClass "{5E2F4B67AA2A5149}" {
+     Name "Third"
+     Slot LayoutSlot "{5E2F4B6179B53D75}" {
+      Padding 0 5 0 0
+      SizeMode Fill
+     }
+     Text "votre inventaire et trop plein"
+     "Font Size" 20
+     "Min Font Size" 20
+     "Horizontal Alignment" Center
+    }
+   }
+  }
+ }
+}

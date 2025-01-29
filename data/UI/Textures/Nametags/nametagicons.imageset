@@ -1,0 +1,78 @@
+ImageSetClass {
+ RefSize 204 268
+ Textures {
+  ImageSetTextureClass {
+   screenSize FHD
+   size 204 268
+   path "{974F0E648E77B6E1}UI/Textures/Nametags/nametagicons_atlas.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass VON {
+   Name "VON"
+   Pos 2 2
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass "VON-shadow" {
+   Name "VON-shadow"
+   Pos 68 2
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass bleeding {
+   Name "bleeding"
+   Pos 134 2
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass "bleeding-shadow" {
+   Name "bleeding-shadow"
+   Pos 2 68
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass death {
+   Name "death"
+   Pos 68 68
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass "death-shadow" {
+   Name "death-shadow"
+   Pos 134 68
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass "pointer-small" {
+   Name "pointer-small"
+   Pos 2 134
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass "pointer-small-shadow" {
+   Name "pointer-small-shadow"
+   Pos 68 134
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass unconscious {
+   Name "unconscious"
+   Pos 134 134
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass "unconscious-shadow" {
+   Name "unconscious-shadow"
+   Pos 2 200
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass "KOTH-TeamPoint" {
+   Name "KOTH-TeamPoint"
+   Pos 68 200
+   Size 64 64
+   Flags 0
+  }
+ }
+}

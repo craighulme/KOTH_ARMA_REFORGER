@@ -1,0 +1,149 @@
+HorizontalLayoutWidgetClass {
+ Name "KOTH_Notification"
+ Slot OverlayWidgetSlot "{5C9E2A9FC993FEE7}" {
+  HorizontalAlign 2
+  VerticalAlign 3
+  Padding 0 0 0 2
+ }
+ components {
+  SCR_FadeUIComponent "{5E2511CECDD9C71F}" {
+  }
+ }
+ {
+  OverlayWidgetClass "{5E2539EE77BDD63C}" {
+   Name "ItemList"
+   Slot LayoutSlot "{5C982A3F129726D2}" {
+    SizeMode Fill
+    FillWeight 2
+   }
+   {
+    HorizontalLayoutWidgetClass "{5E2539EE77BDD63D}" {
+     Name "BaseLayout"
+     Slot OverlayWidgetSlot "{5C982A3F27B50ED7}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      VerticalLayoutWidgetClass "{5E2539EE77BDD63B}" {
+       Name "DescLayout"
+       Slot LayoutSlot "{5C982A3ED9633687}" {
+        Padding 5 5 5 5
+        SizeMode Fill
+        FillWeight 4
+       }
+       {
+        HorizontalLayoutWidgetClass "{5E2539EE77BDD638}" {
+         Name "Base_Layout"
+         Slot LayoutSlot "{5E1D46E3F35C9779}" {
+          SizeMode Fill
+         }
+         {
+          OverlayWidgetClass "{5E2539EE77BDD636}" {
+           Name "TEXT"
+           Slot LayoutSlot "{5C982A3F129726D2}" {
+            Padding 0 0 0 0
+            FillWeight 1
+           }
+           {
+            HorizontalLayoutWidgetClass "{5E2539EE77BDD637}" {
+             Name "HorizontalLayout0"
+             Slot OverlayWidgetSlot "{5E2511C82622233D}" {
+             }
+             {
+              TextWidgetClass "{5E2539EE77BDD635}" {
+               Name "TextNotif"
+               Slot LayoutSlot "{5E2511CEA7F10C79}" {
+               }
+               Text "Objectif offensive "
+               "Font Size" 18
+               "Min Font Size" 18
+               "Horizontal Alignment" Center
+               "Vertical Alignment" Center
+               FontProperties FontProperties "{5E2542D4B52600CF}" {
+                ShadowSize 16
+                ShadowOffset 3 3
+                ShadowOpacity 0.3
+               }
+              }
+             }
+            }
+           }
+          }
+          OverlayWidgetClass "{5E2539EE77BDD632}" {
+           Name "XP"
+           Slot LayoutSlot "{5C982A3F129726D2}" {
+            Padding 5 0 0 0
+           }
+           {
+            HorizontalLayoutWidgetClass "{5E2539EE77BDD630}" {
+             Name "HorizontalLayout0"
+             Slot OverlayWidgetSlot "{5C982A3E5AB5202F}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             {
+              TextWidgetClass "{5E2539EE77BDD631}" {
+               Name "XpNotif"
+               Slot LayoutSlot "{5C982A3E46E3921A}" {
+                SizeMode Fill
+               }
+               Color 0 0.333 0.083 1
+               Text "100 xp "
+               "Font Size" 18
+               "Min Font Size" 18
+               "Horizontal Alignment" Center
+               "Vertical Alignment" Center
+               FontProperties FontProperties "{5E2542D483C8D652}" {
+                ShadowSize 16
+                ShadowOffset 3 3
+                ShadowOpacity 0.3
+               }
+              }
+             }
+            }
+           }
+          }
+          OverlayWidgetClass "{5E2539EE77BDD60F}" {
+           Name "MONEY"
+           Slot LayoutSlot "{5C982A3F129726D2}" {
+            Padding 5 0 5 0
+           }
+           {
+            HorizontalLayoutWidgetClass "{5E2539EE77BDD60D}" {
+             Name "HorizontalLayout0"
+             Slot OverlayWidgetSlot "{5C982A3E5AB5202F}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             {
+              TextWidgetClass "{5E2539EE77BDD60A}" {
+               Name "MoneyNotif"
+               Slot LayoutSlot "{5C982A3E46E3921A}" {
+                SizeMode Fill
+               }
+               Color 0.259 0.686 0.365 1
+               Text "100 $"
+               "Font Size" 18
+               "Min Font Size" 18
+               "Horizontal Alignment" Center
+               "Vertical Alignment" Center
+               FontProperties FontProperties "{5E2542D569272B07}" {
+                ShadowSize 16
+                ShadowOffset 3 3
+                ShadowOpacity 0.3
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

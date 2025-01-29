@@ -1,0 +1,94 @@
+GenericEntity KOTH_FirstSpawn : "{0D777787DAAD3541}Prefabs/Structures/KOTH/Camp_Blufor.et" {
+ coords 449.852 181.314 1845.291
+ angleY 30
+}
+GenericEntity KOTH_ThirdSpawn : "{108B69D9D8DDE8B0}Prefabs/Structures/KOTH/Camp_Opfor.et" {
+ coords 1738.512 133.729 4116.922
+ angleY 168.228
+}
+$grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+ KOTH_FirstVehicleSpawn {
+  coords 401.352 188.429 1836.097
+  angleY -30
+  {
+   KOTH_SpawnPrefab KOTH_FirstVehicleSpawn_1 : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    coords 23.927 -3.669 14.905
+   }
+  }
+ }
+ KOTH_SecondVehicleSpawn {
+  coords 3266.629 203.616 765.443
+  {
+   KOTH_SpawnPrefab KOTH_SecondVehicleSpawn_1 : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    coords -34.704 -2.283 18.273
+   }
+  }
+ }
+ KOTH_ThirdVehicleSpawn {
+  coords 1769.565 134.568 4106.008
+  angleY -120
+  {
+   KOTH_SpawnPrefab KOTH_ThirdVehicleSpawn_1 : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    coords 34.503 0.74 -4.613
+   }
+  }
+ }
+}
+$grp GenericEntity : "{67EE7343073E3AF4}Prefabs/Systems/AmbientVehicles/AmbientVehicleSpawnpoint_US.et" {
+ KOTH_FirstFreeTruck {
+  coords 431.198 181.206 1831.379
+  angleY 15.644
+ }
+ KOTH_FirstFreeHelo {
+  coords 475.38 175.441 1827.177
+  angleY 15.644
+ }
+ KOTH_SecondFreeTruck {
+  coords 3202.937 197.616 784.739
+  angleX -5.881
+  angleY -52.795
+  angleZ -1.103
+ }
+ KOTH_SecondFreeHelo {
+  coords 3209.258 205.653 741.75
+  angleX -5.881
+  angleY -52.795
+  angleZ -1.103
+ }
+ KOTH_ThirdFreeTruck {
+  coords 1728.143 132.084 4111.712
+  angleX -3.686
+  angleY 164.996
+  angleZ 0.062
+ }
+ KOTH_ThirdFreeHelo {
+  coords 1724.422 134.294 4139.706
+  angleX -4.546
+  angleY 164.977
+  angleZ 0.295
+ }
+}
+GenericEntity KOTH_SecondSpawn : "{900D62CF65FB7496}Prefabs/Structures/KOTH/Camp_Indfor.et" {
+ coords 3201.906 201.641 769.816
+ angleY 120
+}
+$grp GenericEntity : "{B956CCBC147690A4}Prefabs/MP/Triggers/KOTH_RepairZoneTrigger.et" {
+ {
+  coords 1679.444 140.045 4246.992
+  angleX 0.264
+  angleY 15.066
+  angleZ 4.448
+ }
+ {
+  coords 427.991 179.382 1730.901
+  angleX 0.423
+  angleY -95.927
+  angleZ 1.401
+ }
+ {
+  coords 3326.672 201.544 730.492
+  angleX 0.393
+  angleY -136.277
+  angleZ -4.863
+ }
+}

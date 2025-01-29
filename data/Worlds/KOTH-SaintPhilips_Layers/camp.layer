@@ -1,0 +1,84 @@
+GenericEntity KOTH_FirstSpawn : "{0D777787DAAD3541}Prefabs/Structures/KOTH/Camp_Blufor.et" {
+ coords 5491.786 43.289 10833.967
+ angleY 112.017
+}
+GenericEntity KOTH_SecondSpawn : "{108B69D9D8DDE8B0}Prefabs/Structures/KOTH/Camp_Opfor.et" {
+ coords 4900.16 28.702 12011.183
+ angleY -90
+}
+$grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+ KOTH_FirstVehicleSpawn {
+  coords 5528.249 41.359 10854.811
+  angleY -36.711
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    KOTH_FirstVehicleSpawn2 {
+     coords -14.735 0.344 -18.574
+    }
+    KOTH_FirstVehicleSpawn3 {
+     coords 16.063 -0.187 16.955
+    }
+   }
+  }
+ }
+ KOTH_ThirdVehicleSpawn {
+  coords 4664.26 24.707 9604.775
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    KOTH_ThirdVehicleSpawn2 {
+     coords 0.054 -0.355 -21.759
+    }
+    KOTH_ThirdVehicleSpawn3 {
+     coords 0.427 0.001 21.716
+    }
+   }
+  }
+ }
+ KOTH_SecondVehicleSpawn {
+  coords 4891.992 28.562 11987.169
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    KOTH_SecondVehicleSpawn2 {
+     coords -20.309 -0.648 -2.353
+    }
+    KOTH_SecondVehicleSpawn3 {
+     coords -16.444 -1.082 26.919
+    }
+   }
+  }
+ }
+}
+$grp GenericEntity : "{67EE7343073E3AF4}Prefabs/Systems/AmbientVehicles/AmbientVehicleSpawnpoint_US.et" {
+ KOTH_SecondFreeTruck {
+  coords 4850.04 26.771 11998.458
+  angleY -180
+ }
+ KOTH_FirstFreeTruck {
+  coords 5459.14 41.774 10860.937
+  angleY -120
+ }
+ KOTH_ThirdFreeTruck {
+  coords 4637.135 23.558 9638.754
+ }
+ KOTH_SecondFreeHelo {
+  coords 4879.321 28.594 11942.692
+  angleY -180
+ }
+ KOTH_FirstFreeHelo {
+  coords 5489.693 41.935 10870.483
+  angleY -127.452
+ }
+ KOTH_ThirdFreeHelo {
+  coords 4627.727 23.891 9606.785
+ }
+}
+GenericEntity KOTH_ThirdSpawn : "{900D62CF65FB7496}Prefabs/Structures/KOTH/Camp_Indfor.et" {
+ coords 4645.028 25.263 9616.062
+ angleY 75
+ {
+  SCR_DestructibleBuildingEntity {
+   ID "5E1EFBF82199291F"
+   coords -1.809 -7.866 -0.082
+  }
+ }
+}

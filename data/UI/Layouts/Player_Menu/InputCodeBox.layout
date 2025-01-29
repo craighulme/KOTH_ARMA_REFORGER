@@ -1,0 +1,201 @@
+FrameWidgetClass : "{E6B607B27BCC1477}UI/layouts/Menus/Dialogs/ConfigurableDialog.layout" {
+ Name "BasicDialog"
+ {
+  OverlayWidgetClass "{56D6D7CE83DA03EE}" {
+   Prefab "{56D6D7CE83DA03EE}"
+   Slot FrameWidgetSlot "{5558C3118DE4FCC1}" {
+    PositionX -0.651
+    OffsetLeft -0.651
+    PositionY 0
+    OffsetTop 0
+    SizeX 0
+    OffsetRight 0.651
+    SizeY 0
+    OffsetBottom 0
+   }
+  }
+  SizeLayoutWidgetClass "{5CC296FE0BE2ED39}" {
+   Prefab "{5CC296FE0BE2ED39}"
+   {
+    OverlayWidgetClass "{5CC296FBD8B6CA52}" {
+     Prefab "{5CC296FBD8B6CA52}"
+     {
+      VerticalLayoutWidgetClass "{5CC296FBD8B6CA68}" {
+       Prefab "{5CC296FBD8B6CA68}"
+       {
+        HorizontalLayoutWidgetClass "{5CC296FE665361F7}" {
+         Prefab "{5CC296FE665361F7}"
+         components {
+          SCR_CoreMenuHeaderComponent "{5DF8B494918B68DB}" {
+           m_sTitle "Bonus code"
+          }
+         }
+         {
+          SizeLayoutWidgetClass "{5CDCC55754F81B7E}" {
+           Prefab "{5CDCC55754F81B7E}"
+           "Is Visible" 0
+           {
+            ImageWidgetClass "{5CC296FBD8B6CA6E}" {
+             Prefab "{5CC296FBD8B6CA6E}"
+             Size 64 64
+             "Blend Mode" Additive
+            }
+           }
+          }
+         }
+        }
+        OverlayWidgetClass "{5CC296FBD8B6CA6D}" {
+         Prefab "{5CC296FBD8B6CA6D}"
+         {
+          SizeLayoutWidgetClass "{5CC296F8389B4B68}" {
+           Prefab "{5CC296F8389B4B68}"
+           {
+            VerticalLayoutWidgetClass "{5CC296F8389B4B6E}" {
+             Prefab "{5CC296F8389B4B6E}"
+             {
+              OverlayWidgetClass "{5CC296F8389B4B62}" {
+               Prefab "{5CC296F8389B4B62}"
+               {
+                OverlayWidgetClass "{5DFB2865FF60D82F}" : "{C1A6173E3936CE2F}UI/layouts/Menus/Dialogs/LoginDialogContent.layout" {
+                 Name "ContentRoot0"
+                 Slot OverlayWidgetSlot "{5CB6C1EDF6BB076A}" {
+                 }
+                 {
+                  VerticalLayoutWidgetClass "{5CB6C1EDEAE7CD25}" {
+                   Prefab "{5CB6C1EDEAE7CD25}"
+                   {
+                    HorizontalLayoutWidgetClass "{5DF289500164323F}" {
+                     Prefab "{5DF289500164323F}"
+                     "Is Enabled" 0
+                     "Is Visible" 0
+                    }
+                    ButtonWidgetClass "{5CB6C1EDEAE7CD3B}" {
+                     Prefab "{5CB6C1EDEAE7CD3B}"
+                     {
+                      VerticalLayoutWidgetClass "{5AA4D27F39EB2514}" {
+                       Prefab "{5AA4D27F39EB2514}"
+                       {
+                        SizeLayoutWidgetClass "{5538C205B27B0F5D}" {
+                         Prefab "{5538C205B27B0F5D}"
+                         {
+                          OverlayWidgetClass "{55367D8E531FD623}" {
+                           Prefab "{55367D8E531FD623}"
+                           {
+                            HorizontalLayoutWidgetClass "{55367D8E4592BC6E}" {
+                             Prefab "{55367D8E4592BC6E}"
+                             {
+                              OverlayWidgetClass "{5538C2059A570E94}" {
+                               Prefab "{5538C2059A570E94}"
+                               {
+                                HorizontalLayoutWidgetClass "{58D095EE846E2B93}" {
+                                 Prefab "{58D095EE846E2B93}"
+                                 {
+                                  EditBoxWidgetClass "{5538C2058B18F877}" {
+                                   Prefab "{5538C2058B18F877}"
+                                   components {
+                                    EditBoxFilterComponent "{5538D70DF38310BC}" {
+                                     m_iCharacterLimit 32
+                                     m_bPunctuation 0
+                                     m_bUTFMultibyte 0
+                                    }
+                                   }
+                                   "Placeholder text" "Enter Bonus Code Here"
+                                   "Horizontal alignment" Center
+                                  }
+                                 }
+                                }
+                               }
+                              }
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                    ButtonWidgetClass "{5CB6C1EDEAE7CD32}" {
+                     Prefab "{5CB6C1EDEAE7CD32}"
+                     "Is Enabled" 0
+                     "Is Visible" 0
+                    }
+                    SizeLayoutWidgetClass "{5EA8B68547897C0B}" {
+                     Prefab "{5EA8B68547897C0B}"
+                     "Is Visible" 0
+                     components {
+                      SCR_SimpleWarningComponent "{5EA8B68B12CFCC2B}" {
+                       m_sWarning "Wrong bonus code"
+                      }
+                     }
+                     {
+                      HorizontalLayoutWidgetClass "{5CB6C1EDEAE7CD37}" {
+                       Prefab "{5CB6C1EDEAE7CD37}"
+                       {
+                        RichTextWidgetClass "{5CB6C1EDEAE7CD4E}" {
+                         Prefab "{5CB6C1EDEAE7CD4E}"
+                         Color 0 0.502 0.125 1
+                         Text "Wrong bonus code"
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+        HorizontalLayoutWidgetClass "{5CC296FBD8B6CA62}" {
+         Prefab "{5CC296FBD8B6CA62}"
+         {
+          OverlayWidgetClass "{5CC296FBE7B45399}" {
+           Prefab "{5CC296FBE7B45399}"
+           {
+            HorizontalLayoutWidgetClass "{5CC296FBE7B4539E}" {
+             Prefab "{5CC296FBE7B4539E}"
+             {
+              ButtonWidgetClass "{5DFB2865FF60D836}" : "{0114A06AD44D49BD}UI/layouts/WidgetLibrary/Buttons/DialogButtonCancel.layout" {
+               Name "Cancel"
+               Slot LayoutSlot "{5CC2F7A314C9440B}" {
+               }
+              }
+             }
+            }
+            HorizontalLayoutWidgetClass "{5CC296FBE7B4539F}" {
+             Prefab "{5CC296FBE7B4539F}"
+             {
+              ButtonWidgetClass "{5DFB2865FF60D835}" : "{51898FF369FE5EB8}UI/layouts/WidgetLibrary/Buttons/DialogButtonConfirm.layout" {
+               Name "Confirm"
+               Slot LayoutSlot "{5CC2F7A314C9440B}" {
+               }
+               components {
+                SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+                 m_sActionName "MenuSelect"
+                 m_iHeightInPixel 44
+                 m_fHoldIndicatorHoldPosition 5
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

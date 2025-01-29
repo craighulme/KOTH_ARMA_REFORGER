@@ -1,0 +1,29 @@
+SCR_ChimeraCharacter {
+ ID "520EC961A090B1EE"
+ components {
+  SCR_BaseHUDComponent "{520EA1D2DB118134}" {
+   InfoDisplays {
+    KOTH_WaypointInfoDisplay "{629CF8E9EA216205}" {
+     VisibleAtParent 1
+     m_LayoutPath "{98241A74AE39CC08}UI/Layouts/HUD/KOTH_Waypoint.layout"
+     m_eLayer MEDIUM
+    }
+   }
+  }
+  SCR_CharacterStaminaComponent "{520EA1D2F659C824}" {
+   DefaultCharacterMass 70
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    KOTH_SCR_ReviveAction "{6220D966F1F99306}" {
+     ParentContextList {
+      "LowerTorso"
+     }
+     UIInfo UIInfo "{6220D9661CF05BD4}" {
+      Name "Revive !"
+     }
+    }
+   }
+  }
+ }
+}

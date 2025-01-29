@@ -1,0 +1,5 @@
+KOTH_PresenceTriggerEntity : "{F9467A5734030343}Prefabs/MP/Triggers/KOTH_zoneTrigger.et" {
+ coords 3104.1 15.95 2750.64
+ angleX -1.79
+ angleZ -0.895
+}

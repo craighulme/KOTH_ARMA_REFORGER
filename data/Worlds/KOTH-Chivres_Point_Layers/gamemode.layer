@@ -1,0 +1,34 @@
+SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{6284ABADB62E67B7}" {
+     NavmeshFile "{098CC0568690AAD9}Worlds/BarzanMapRemake/Navmeshes/GM_BarzanMapRemake.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5C8C9B750D124A63}" {
+   NavmeshSettings NavmeshWorld "{5C8C9B750B60C6E2}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5C90BD0EC793647D}" {
+     NavmeshFile "{49153A2B2DBDE0F4}Worlds/BarzanMapRemake/Navmeshes/LowResBarzanMapRemake.nmn"
+    }
+   }
+  }
+ }
+ coords 1846.677 8.521 2507.985
+}
+SCR_BaseGameMode KOTH_GameMode1 : "{E5118D0809DD3CDF}Prefabs/MP/Modes/KOTH_GameMode.et" {
+ coords 1064.229 0.944 2379.933
+}
+KOTH_PresenceTriggerEntity : "{F9467A5734030343}Prefabs/MP/Triggers/KOTH_zoneTrigger.et" {
+ coords 1905.663 2 2936.226
+ angleX 0
+ angleZ 0
+ SphereRadius 150
+ {
+  KOTH_PriorityAreaPresenceTriggerEntity {
+   ID "60B4DB5F4B905473"
+   SphereRadius 25
+  }
+ }
+}

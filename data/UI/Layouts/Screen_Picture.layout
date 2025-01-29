@@ -1,0 +1,1632 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  FrameWidgetClass "{5E1AB28AB6A5C1B7}" {
+   Name "Zone_Texture"
+   Slot FrameWidgetSlot "{5E1AB28AB6A5C1E8}" {
+    OffsetLeft 0
+    OffsetTop 0
+    SizeX 1024
+    OffsetRight -1024
+    SizeY 1024
+    OffsetBottom -1024
+   }
+   {
+    ImageWidgetClass "{5E1AB28786C40069}" {
+     Name "BackGround"
+     Slot FrameWidgetSlot "{5C86C0CA7FEFA86D}" {
+      Anchor 0 0 1 1
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 0
+      OffsetRight 0
+      SizeY 0
+      OffsetBottom 0
+     }
+     Texture "{E7594EA554944BCA}Art/koth_scoreboard.edds"
+     Size 1024 1024
+    }
+    FrameWidgetClass "{5E1AB2BDBFD53819}" {
+     Name "Frame_LeaderBoard"
+     Slot FrameWidgetSlot "{5E1AB2BDBFD53872}" {
+      PositionX 440.929
+      OffsetLeft 440.929
+      PositionY 167.339
+      OffsetTop 167.339
+      SizeX 562.77
+      OffsetRight -1003.7
+      SizeY 371.337
+      OffsetBottom -538.676
+     }
+     {
+      HorizontalLayoutWidgetClass "{5E1AB2BDC791E156}" {
+       Name "HorizontalLayoutN1"
+       Slot FrameWidgetSlot "{5E1AB2BDC791E1B8}" {
+        PositionX 5
+        OffsetLeft 5
+        PositionY 5
+        OffsetTop 5
+        SizeX 500
+        OffsetRight -505
+        SizeY 30
+        OffsetBottom -35
+       }
+       {
+        FrameWidgetClass "{5E1AB2BF3902F552}" {
+         Name "Frame0"
+         Slot LayoutSlot "{5E1AB2BF3902F58A}" {
+         }
+         {
+          ImageWidgetClass "{5E1AB2BCE0BE4B15}" {
+           Name "CampSideN1"
+           Slot FrameWidgetSlot "{5E1AB2BF3AB7BB26}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Color 0.502 0 0 1
+           Texture "{377A0E31C6AA326C}UI/Textures/InventoryIcons/Medical/circle-modifier_UI.edds"
+           Size 30 30
+          }
+         }
+        }
+        FrameWidgetClass "{5E1AB2BF78B2B297}" {
+         Name "Frame1"
+         Slot LayoutSlot "{5E1B3AAE921DD623}" {
+          Padding 5 0 0 0
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1AB2BC0F513012}" {
+           Name "RankN1"
+           Slot FrameWidgetSlot "{5E1AB2BF7AC94053}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "#1"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1AB2B88F2D71B1}" {
+         Name "Frame2"
+         Slot LayoutSlot "{5E1AB2B88F2D71E7}" {
+         }
+         {
+          TextWidgetClass "{5E1AB2BC56202F8D}" {
+           Name "NameN1"
+           Slot FrameWidgetSlot "{5E1AB2B88A931D39}" {
+            PositionX 0
+            OffsetLeft 0
+            PositionY 0
+            OffsetTop 0
+            SizeX 266
+            OffsetRight -266
+            SizeY 30
+            OffsetBottom -30
+           }
+           Text "AQKWA"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Horizontal Alignment" Center
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1AB2B8FC81A3BC}" {
+         Name "Frame3"
+         Slot LayoutSlot "{5E1B3AAE921DD6E1}" {
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1AB2BC40BFA5A3}" {
+           Name "KillN1"
+           Slot FrameWidgetSlot "{5E1AB2B8F9027449}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 45
+            OffsetRight -45
+            OffsetBottom -30
+           }
+           Text "20"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1AB2B8F3F24968}" {
+         Name "Frame4"
+         Slot LayoutSlot "{5E1B3AAE921DD134}" {
+          Padding 0 0 0 0
+          SizeMode Fill
+         }
+         {
+          TextWidgetClass "{5E1AB2BC72E3FC26}" {
+           Name "DeathN1"
+           Slot FrameWidgetSlot "{5E1AB2B8FA2AB754}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "1"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{5E1B3AAB95B28274}" {
+       Name "HorizontalLayoutN0"
+       Slot FrameWidgetSlot "{5E1AB2BDC791E1B8}" {
+        PositionX 5
+        OffsetLeft 5
+        PositionY 38
+        OffsetTop 38
+        SizeX 500
+        OffsetRight -505
+        SizeY 30
+        OffsetBottom -68
+       }
+       {
+        FrameWidgetClass "{5E1B3AAB95B28275}" {
+         Name "Frame0"
+         Slot LayoutSlot "{5E1AB2BF3902F58A}" {
+         }
+         {
+          ImageWidgetClass "{5E1B3AAB95B28273}" {
+           Name "CampSideN2"
+           Slot FrameWidgetSlot "{5E1AB2BF3AB7BB26}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Color 0.502 0 0 1
+           Texture "{377A0E31C6AA326C}UI/Textures/InventoryIcons/Medical/circle-modifier_UI.edds"
+           Size 30 30
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AAB95B28271}" {
+         Name "Frame1"
+         Slot LayoutSlot "{5E1B3AAE921DD623}" {
+          Padding 5 0 0 0
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AAB95B2824F}" {
+           Name "RankN2"
+           Slot FrameWidgetSlot "{5E1AB2BF7AC94053}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "#2"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AAB95B2824C}" {
+         Name "Frame2"
+         Slot LayoutSlot "{5E1AB2B88F2D71E7}" {
+         }
+         {
+          TextWidgetClass "{5E1B3AAB95B2824A}" {
+           Name "NameN2"
+           Slot FrameWidgetSlot "{5E1AB2B88A931D39}" {
+            PositionX 0
+            OffsetLeft 0
+            PositionY 0
+            OffsetTop 0
+            SizeX 266
+            OffsetRight -266
+            SizeY 30
+            OffsetBottom -30
+           }
+           Text "AQKWA"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Horizontal Alignment" Center
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AAB95B2824B}" {
+         Name "Frame3"
+         Slot LayoutSlot "{5E1B3AAE921DD6E1}" {
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AAB95B28249}" {
+           Name "KillN2"
+           Slot FrameWidgetSlot "{5E1AB2B8F9027449}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 45
+            OffsetRight -45
+            OffsetBottom -30
+           }
+           Text "20"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AAB95B28246}" {
+         Name "Frame4"
+         Slot LayoutSlot "{5E1B3AAE921DD134}" {
+          Padding 0 0 0 0
+          SizeMode Fill
+         }
+         {
+          TextWidgetClass "{5E1B3AAB95B28244}" {
+           Name "DeathN2"
+           Slot FrameWidgetSlot "{5E1AB2B8FA2AB754}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "55"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{5E1B3AABAEBCD73B}" {
+       Name "HorizontalLayoutN2"
+       Slot FrameWidgetSlot "{5E1AB2BDC791E1B8}" {
+        PositionX 5
+        OffsetLeft 5
+        PositionY 71
+        OffsetTop 71
+        SizeX 500
+        OffsetRight -505
+        SizeY 30
+        OffsetBottom -101
+       }
+       {
+        FrameWidgetClass "{5E1B3AABAEBCD738}" {
+         Name "Frame0"
+         Slot LayoutSlot "{5E1AB2BF3902F58A}" {
+         }
+         {
+          ImageWidgetClass "{5E1B3AABAEBCD736}" {
+           Name "CampSideN3"
+           Slot FrameWidgetSlot "{5E1AB2BF3AB7BB26}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Color 0.502 0 0 1
+           Texture "{377A0E31C6AA326C}UI/Textures/InventoryIcons/Medical/circle-modifier_UI.edds"
+           Size 30 30
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABAEBCD734}" {
+         Name "Frame1"
+         Slot LayoutSlot "{5E1B3AAE921DD623}" {
+          Padding 5 0 0 0
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABAEBCD735}" {
+           Name "RankN3"
+           Slot FrameWidgetSlot "{5E1AB2BF7AC94053}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "#3"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABAEBCD733}" {
+         Name "Frame2"
+         Slot LayoutSlot "{5E1AB2B88F2D71E7}" {
+         }
+         {
+          TextWidgetClass "{5E1B3AABAEBCD731}" {
+           Name "NameN3"
+           Slot FrameWidgetSlot "{5E1AB2B88A931D39}" {
+            PositionX 0
+            OffsetLeft 0
+            PositionY 0
+            OffsetTop 0
+            SizeX 266
+            OffsetRight -266
+            SizeY 30
+            OffsetBottom -30
+           }
+           Text "AQKWA"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Horizontal Alignment" Center
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABAEBCD70E}" {
+         Name "Frame3"
+         Slot LayoutSlot "{5E1B3AAE921DD6E1}" {
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABAEBCD70C}" {
+           Name "KillN3"
+           Slot FrameWidgetSlot "{5E1AB2B8F9027449}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 45
+            OffsetRight -45
+            OffsetBottom -30
+           }
+           Text "20"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABAEBCD70D}" {
+         Name "Frame4"
+         Slot LayoutSlot "{5E1B3AAE921DD134}" {
+          Padding 0 0 0 0
+          SizeMode Fill
+         }
+         {
+          TextWidgetClass "{5E1B3AABAEBCD70B}" {
+           Name "DeathN3"
+           Slot FrameWidgetSlot "{5E1AB2B8FA2AB754}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "55"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{5E1B3AABD11F86E6}" {
+       Name "HorizontalLayoutN3"
+       Slot FrameWidgetSlot "{5E1AB2BDC791E1B8}" {
+        PositionX 5
+        OffsetLeft 5
+        PositionY 104
+        OffsetTop 104
+        SizeX 500
+        OffsetRight -505
+        SizeY 30
+        OffsetBottom -134
+       }
+       {
+        FrameWidgetClass "{5E1B3AABD11F86E7}" {
+         Name "Frame0"
+         Slot LayoutSlot "{5E1AB2BF3902F58A}" {
+         }
+         {
+          ImageWidgetClass "{5E1B3AABD11F86E5}" {
+           Name "CampSideN4"
+           Slot FrameWidgetSlot "{5E1AB2BF3AB7BB26}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Color 0 0.431 0.108 1
+           Texture "{377A0E31C6AA326C}UI/Textures/InventoryIcons/Medical/circle-modifier_UI.edds"
+           Size 30 30
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABD11F86E3}" {
+         Name "Frame1"
+         Slot LayoutSlot "{5E1B3AAE921DD623}" {
+          Padding 5 0 0 0
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABD11F86E1}" {
+           Name "RankN4"
+           Slot FrameWidgetSlot "{5E1AB2BF7AC94053}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "#4"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABD11F86FE}" {
+         Name "Frame2"
+         Slot LayoutSlot "{5E1AB2B88F2D71E7}" {
+         }
+         {
+          TextWidgetClass "{5E1B3AABD11F86FC}" {
+           Name "NameN4"
+           Slot FrameWidgetSlot "{5E1AB2B88A931D39}" {
+            PositionX 0
+            OffsetLeft 0
+            PositionY 0
+            OffsetTop 0
+            SizeX 266
+            OffsetRight -266
+            SizeY 30
+            OffsetBottom -30
+           }
+           Text "AQKWA"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Horizontal Alignment" Center
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABD11F86FD}" {
+         Name "Frame3"
+         Slot LayoutSlot "{5E1B3AAE921DD6E1}" {
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABD11F86FB}" {
+           Name "KillN4"
+           Slot FrameWidgetSlot "{5E1AB2B8F9027449}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 45
+            OffsetRight -45
+            OffsetBottom -30
+           }
+           Text "20"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABD11F86F8}" {
+         Name "Frame4"
+         Slot LayoutSlot "{5E1B3AAE921DD134}" {
+          Padding 0 0 0 0
+          SizeMode Fill
+         }
+         {
+          TextWidgetClass "{5E1B3AABD11F86F6}" {
+           Name "DeathN4"
+           Slot FrameWidgetSlot "{5E1AB2B8FA2AB754}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "2"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{5E1B3AABDC31A2EC}" {
+       Name "HorizontalLayoutN4"
+       Slot FrameWidgetSlot "{5E1AB2BDC791E1B8}" {
+        PositionX 5
+        OffsetLeft 5
+        PositionY 137
+        OffsetTop 137
+        SizeX 500
+        OffsetRight -505
+        SizeY 30
+        OffsetBottom -167
+       }
+       {
+        FrameWidgetClass "{5E1B3AABDC31A2ED}" {
+         Name "Frame0"
+         Slot LayoutSlot "{5E1AB2BF3902F58A}" {
+         }
+         {
+          ImageWidgetClass "{5E1B3AABDC31A2EB}" {
+           Name "CampSideN5"
+           Slot FrameWidgetSlot "{5E1AB2BF3AB7BB26}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Color 0 0.125 0.502 1
+           Texture "{377A0E31C6AA326C}UI/Textures/InventoryIcons/Medical/circle-modifier_UI.edds"
+           Size 30 30
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABDC31A2E9}" {
+         Name "Frame1"
+         Slot LayoutSlot "{5E1B3AAE921DD623}" {
+          Padding 5 0 0 0
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABDC31A2E6}" {
+           Name "RankN5"
+           Slot FrameWidgetSlot "{5E1AB2BF7AC94053}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "#5"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABDC31A2E4}" {
+         Name "Frame2"
+         Slot LayoutSlot "{5E1AB2B88F2D71E7}" {
+         }
+         {
+          TextWidgetClass "{5E1B3AABDC31A2E5}" {
+           Name "NameN5"
+           Slot FrameWidgetSlot "{5E1AB2B88A931D39}" {
+            PositionX 0
+            OffsetLeft 0
+            PositionY 0
+            OffsetTop 0
+            SizeX 266
+            OffsetRight -266
+            SizeY 30
+            OffsetBottom -30
+           }
+           Text "AQKWA"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Horizontal Alignment" Center
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABDC31A2E3}" {
+         Name "Frame3"
+         Slot LayoutSlot "{5E1B3AAE921DD6E1}" {
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABDC31A2E0}" {
+           Name "KillN5"
+           Slot FrameWidgetSlot "{5E1AB2B8F9027449}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 45
+            OffsetRight -45
+            OffsetBottom -30
+           }
+           Text "20"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABDC31A2FE}" {
+         Name "Frame4"
+         Slot LayoutSlot "{5E1B3AAE921DD134}" {
+          Padding 0 0 0 0
+          SizeMode Fill
+         }
+         {
+          TextWidgetClass "{5E1B3AABDC31A2FF}" {
+           Name "DeathN5"
+           Slot FrameWidgetSlot "{5E1AB2B8FA2AB754}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "42"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{5E1B3AABC703671B}" {
+       Name "HorizontalLayoutN5"
+       Slot FrameWidgetSlot "{5E1AB2BDC791E1B8}" {
+        PositionX 5
+        OffsetLeft 5
+        PositionY 170
+        OffsetTop 170
+        SizeX 500
+        OffsetRight -505
+        SizeY 30
+        OffsetBottom -200
+       }
+       {
+        FrameWidgetClass "{5E1B3AABC7036718}" {
+         Name "Frame0"
+         Slot LayoutSlot "{5E1AB2BF3902F58A}" {
+         }
+         {
+          ImageWidgetClass "{5E1B3AABC7036716}" {
+           Name "CampSideN6"
+           Slot FrameWidgetSlot "{5E1AB2BF3AB7BB26}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Color 0 0.431 0.11 1
+           Texture "{377A0E31C6AA326C}UI/Textures/InventoryIcons/Medical/circle-modifier_UI.edds"
+           Size 30 30
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABC7036714}" {
+         Name "Frame1"
+         Slot LayoutSlot "{5E1B3AAE921DD623}" {
+          Padding 5 0 0 0
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABC7036715}" {
+           Name "RankN6"
+           Slot FrameWidgetSlot "{5E1AB2BF7AC94053}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "#6"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABC7036713}" {
+         Name "Frame2"
+         Slot LayoutSlot "{5E1AB2B88F2D71E7}" {
+         }
+         {
+          TextWidgetClass "{5E1B3AABC7036711}" {
+           Name "NameN6"
+           Slot FrameWidgetSlot "{5E1AB2B88A931D39}" {
+            PositionX 0
+            OffsetLeft 0
+            PositionY 0
+            OffsetTop 0
+            SizeX 266
+            OffsetRight -266
+            SizeY 30
+            OffsetBottom -30
+           }
+           Text "AQKWA"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Horizontal Alignment" Center
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABC703676E}" {
+         Name "Frame3"
+         Slot LayoutSlot "{5E1B3AAE921DD6E1}" {
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABC703676C}" {
+           Name "KillN6"
+           Slot FrameWidgetSlot "{5E1AB2B8F9027449}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 45
+            OffsetRight -45
+            OffsetBottom -30
+           }
+           Text "20"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABC703676D}" {
+         Name "Frame4"
+         Slot LayoutSlot "{5E1B3AAE921DD134}" {
+          Padding 0 0 0 0
+          SizeMode Fill
+         }
+         {
+          TextWidgetClass "{5E1B3AABC703676B}" {
+           Name "DeathN6"
+           Slot FrameWidgetSlot "{5E1AB2B8FA2AB754}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "36"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{5E1B3AABC2D0D9CB}" {
+       Name "HorizontalLayoutN6"
+       Slot FrameWidgetSlot "{5E1AB2BDC791E1B8}" {
+        PositionX 5
+        OffsetLeft 5
+        PositionY 203
+        OffsetTop 203
+        SizeX 500
+        OffsetRight -505
+        SizeY 30
+        OffsetBottom -233
+       }
+       {
+        FrameWidgetClass "{5E1B3AABC2D0D9C8}" {
+         Name "Frame0"
+         Slot LayoutSlot "{5E1AB2BF3902F58A}" {
+         }
+         {
+          ImageWidgetClass "{5E1B3AABC2D0D9C6}" {
+           Name "CampSideN7"
+           Slot FrameWidgetSlot "{5E1AB2BF3AB7BB26}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Color 0 0.431 0.11 1
+           Texture "{377A0E31C6AA326C}UI/Textures/InventoryIcons/Medical/circle-modifier_UI.edds"
+           Size 30 30
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABC2D0D9C4}" {
+         Name "Frame1"
+         Slot LayoutSlot "{5E1B3AAE921DD623}" {
+          Padding 5 0 0 0
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABC2D0D9C5}" {
+           Name "RankN7"
+           Slot FrameWidgetSlot "{5E1AB2BF7AC94053}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "#7"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABC2D0D9C3}" {
+         Name "Frame2"
+         Slot LayoutSlot "{5E1AB2B88F2D71E7}" {
+         }
+         {
+          TextWidgetClass "{5E1B3AABC2D0D9C0}" {
+           Name "NameN7"
+           Slot FrameWidgetSlot "{5E1AB2B88A931D39}" {
+            PositionX 0
+            OffsetLeft 0
+            PositionY 0
+            OffsetTop 0
+            SizeX 266
+            OffsetRight -266
+            SizeY 30
+            OffsetBottom -30
+           }
+           Text "AQKWA"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Horizontal Alignment" Center
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABC2D0D9DE}" {
+         Name "Frame3"
+         Slot LayoutSlot "{5E1B3AAE921DD6E1}" {
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABC2D0D9DF}" {
+           Name "KillN7"
+           Slot FrameWidgetSlot "{5E1AB2B8F9027449}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 45
+            OffsetRight -45
+            OffsetBottom -30
+           }
+           Text "20"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABC2D0D9DD}" {
+         Name "Frame4"
+         Slot LayoutSlot "{5E1B3AAE921DD134}" {
+          Padding 0 0 0 0
+          SizeMode Fill
+         }
+         {
+          TextWidgetClass "{5E1B3AABC2D0D9DA}" {
+           Name "DeathN7"
+           Slot FrameWidgetSlot "{5E1AB2B8FA2AB754}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "5"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{5E1B3AABCCAFAB2A}" {
+       Name "HorizontalLayoutN7"
+       Slot FrameWidgetSlot "{5E1AB2BDC791E1B8}" {
+        PositionX 5
+        OffsetLeft 5
+        PositionY 236
+        OffsetTop 236
+        SizeX 500
+        OffsetRight -505
+        SizeY 30
+        OffsetBottom -266
+       }
+       {
+        FrameWidgetClass "{5E1B3AABCCAFAB2B}" {
+         Name "Frame0"
+         Slot LayoutSlot "{5E1AB2BF3902F58A}" {
+         }
+         {
+          ImageWidgetClass "{5E1B3AABCCAFAB29}" {
+           Name "CampSideN8"
+           Slot FrameWidgetSlot "{5E1AB2BF3AB7BB26}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Color 0.502 0 0 1
+           Texture "{377A0E31C6AA326C}UI/Textures/InventoryIcons/Medical/circle-modifier_UI.edds"
+           Size 30 30
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABCCAFAB27}" {
+         Name "Frame1"
+         Slot LayoutSlot "{5E1B3AAE921DD623}" {
+          Padding 5 0 0 0
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABCCAFAB25}" {
+           Name "RankN8"
+           Slot FrameWidgetSlot "{5E1AB2BF7AC94053}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "#8"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABCCAFAB22}" {
+         Name "Frame2"
+         Slot LayoutSlot "{5E1AB2B88F2D71E7}" {
+         }
+         {
+          TextWidgetClass "{5E1B3AABCCAFAB20}" {
+           Name "NameN8"
+           Slot FrameWidgetSlot "{5E1AB2B88A931D39}" {
+            PositionX 0
+            OffsetLeft 0
+            PositionY 0
+            OffsetTop 0
+            SizeX 266
+            OffsetRight -266
+            SizeY 30
+            OffsetBottom -30
+           }
+           Text "AQKWA"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Horizontal Alignment" Center
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABCCAFAB21}" {
+         Name "Frame3"
+         Slot LayoutSlot "{5E1B3AAE921DD6E1}" {
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABCCAFAB3F}" {
+           Name "KillN8"
+           Slot FrameWidgetSlot "{5E1AB2B8F9027449}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 45
+            OffsetRight -45
+            OffsetBottom -30
+           }
+           Text "20"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABCCAFAB3C}" {
+         Name "Frame4"
+         Slot LayoutSlot "{5E1B3AAE921DD134}" {
+          Padding 0 0 0 0
+          SizeMode Fill
+         }
+         {
+          TextWidgetClass "{5E1B3AABCCAFAB3A}" {
+           Name "DeathN8"
+           Slot FrameWidgetSlot "{5E1AB2B8FA2AB754}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "8"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{5E1B3AABCF0A1CBB}" {
+       Name "HorizontalLayoutN8"
+       Slot FrameWidgetSlot "{5E1AB2BDC791E1B8}" {
+        PositionX 5
+        OffsetLeft 5
+        PositionY 269
+        OffsetTop 269
+        SizeX 500
+        OffsetRight -505
+        SizeY 30
+        OffsetBottom -299
+       }
+       {
+        FrameWidgetClass "{5E1B3AABCF0A1CB9}" {
+         Name "Frame0"
+         Slot LayoutSlot "{5E1AB2BF3902F58A}" {
+         }
+         {
+          ImageWidgetClass "{5E1B3AABCF0A1CB6}" {
+           Name "CampSideN9"
+           Slot FrameWidgetSlot "{5E1AB2BF3AB7BB26}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Color 0 0.125 0.502 1
+           Texture "{377A0E31C6AA326C}UI/Textures/InventoryIcons/Medical/circle-modifier_UI.edds"
+           Size 30 30
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABCF0A1CB4}" {
+         Name "Frame1"
+         Slot LayoutSlot "{5E1B3AAE921DD623}" {
+          Padding 5 0 0 0
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABCF0A1CB2}" {
+           Name "RankN9"
+           Slot FrameWidgetSlot "{5E1AB2BF7AC94053}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "#9"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABCF0A1CB0}" {
+         Name "Frame2"
+         Slot LayoutSlot "{5E1AB2B88F2D71E7}" {
+         }
+         {
+          TextWidgetClass "{5E1B3AABCF0A1CB1}" {
+           Name "NameN9"
+           Slot FrameWidgetSlot "{5E1AB2B88A931D39}" {
+            PositionX 0
+            OffsetLeft 0
+            PositionY 0
+            OffsetTop 0
+            SizeX 266
+            OffsetRight -266
+            SizeY 30
+            OffsetBottom -30
+           }
+           Text "AQKWA"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Horizontal Alignment" Center
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABCF0A1C8F}" {
+         Name "Frame3"
+         Slot LayoutSlot "{5E1B3AAE921DD6E1}" {
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABCF0A1C8C}" {
+           Name "KillN9"
+           Slot FrameWidgetSlot "{5E1AB2B8F9027449}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 45
+            OffsetRight -45
+            OffsetBottom -30
+           }
+           Text "20"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABCF0A1C8A}" {
+         Name "Frame4"
+         Slot LayoutSlot "{5E1B3AAE921DD134}" {
+          Padding 0 0 0 0
+          SizeMode Fill
+         }
+         {
+          TextWidgetClass "{5E1B3AABCF0A1C88}" {
+           Name "DeathN9"
+           Slot FrameWidgetSlot "{5E1AB2B8FA2AB754}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "9"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{5E1B3AABC9BFDF68}" {
+       Name "HorizontalLayoutN9"
+       Slot FrameWidgetSlot "{5E1AB2BDC791E1B8}" {
+        PositionX 5
+        OffsetLeft 5
+        PositionY 302
+        OffsetTop 302
+        SizeX 500
+        OffsetRight -505
+        SizeY 30
+        OffsetBottom -332
+       }
+       {
+        FrameWidgetClass "{5E1B3AABC9BFDF66}" {
+         Name "Frame0"
+         Slot LayoutSlot "{5E1AB2BF3902F58A}" {
+         }
+         {
+          ImageWidgetClass "{5E1B3AABC9BFDF64}" {
+           Name "CampSideN10"
+           Slot FrameWidgetSlot "{5E1AB2BF3AB7BB26}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Color 0.502 0 0 1
+           Texture "{377A0E31C6AA326C}UI/Textures/InventoryIcons/Medical/circle-modifier_UI.edds"
+           Size 30 30
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABC9BFDF62}" {
+         Name "Frame1"
+         Slot LayoutSlot "{5E1B3AAE921DD623}" {
+          Padding 5 0 0 0
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABC9BFDF63}" {
+           Name "RankN10"
+           Slot FrameWidgetSlot "{5E1AB2BF7AC94053}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "#10"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABC9BFDF61}" {
+         Name "Frame2"
+         Slot LayoutSlot "{5E1AB2B88F2D71E7}" {
+         }
+         {
+          TextWidgetClass "{5E1B3AABC9BFDF7E}" {
+           Name "NameN10"
+           Slot FrameWidgetSlot "{5E1AB2B88A931D39}" {
+            PositionX 0
+            OffsetLeft 0
+            PositionY 0
+            OffsetTop 0
+            SizeX 266
+            OffsetRight -266
+            SizeY 30
+            OffsetBottom -30
+           }
+           Text "AQKWA"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Horizontal Alignment" Center
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABC9BFDF7C}" {
+         Name "Frame3"
+         Slot LayoutSlot "{5E1B3AAE921DD6E1}" {
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABC9BFDF7A}" {
+           Name "KillN10"
+           Slot FrameWidgetSlot "{5E1AB2B8F9027449}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 45
+            OffsetRight -45
+            OffsetBottom -30
+           }
+           Text "20"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABC9BFDF7B}" {
+         Name "Frame4"
+         Slot LayoutSlot "{5E1B3AAE921DD134}" {
+          Padding 0 0 0 0
+          SizeMode Fill
+         }
+         {
+          TextWidgetClass "{5E1B3AABC9BFDF79}" {
+           Name "DeathN10"
+           Slot FrameWidgetSlot "{5E1AB2B8FA2AB754}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "25"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{5E1B3AABF1499109}" {
+       Name "HorizontalLayoutN10"
+       Slot FrameWidgetSlot "{5E1AB2BDC791E1B8}" {
+        PositionX 5
+        OffsetLeft 5
+        PositionY 335
+        OffsetTop 335
+        SizeX 500
+        OffsetRight -505
+        SizeY 30
+        OffsetBottom -365
+       }
+       {
+        FrameWidgetClass "{5E1B3AABF1499107}" {
+         Name "Frame0"
+         Slot LayoutSlot "{5E1AB2BF3902F58A}" {
+         }
+         {
+          ImageWidgetClass "{5E1B3AABF1499104}" {
+           Name "CampSideN11"
+           Slot FrameWidgetSlot "{5E1AB2BF3AB7BB26}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Color 0 0.125 0.502 1
+           Texture "{377A0E31C6AA326C}UI/Textures/InventoryIcons/Medical/circle-modifier_UI.edds"
+           Size 30 30
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABF1499102}" {
+         Name "Frame1"
+         Slot LayoutSlot "{5E1B3AAE921DD623}" {
+          Padding 5 0 0 0
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABF1499100}" {
+           Name "RankN11"
+           Slot FrameWidgetSlot "{5E1AB2BF7AC94053}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "#11"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABF1499101}" {
+         Name "Frame2"
+         Slot LayoutSlot "{5E1AB2B88F2D71E7}" {
+         }
+         {
+          TextWidgetClass "{5E1B3AABF149911F}" {
+           Name "NameN11"
+           Slot FrameWidgetSlot "{5E1AB2B88A931D39}" {
+            PositionX 0
+            OffsetLeft 0
+            PositionY 0
+            OffsetTop 0
+            SizeX 266
+            OffsetRight -266
+            SizeY 30
+            OffsetBottom -30
+           }
+           Text "AQKWA"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Horizontal Alignment" Center
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABF149911D}" {
+         Name "Frame3"
+         Slot LayoutSlot "{5E1B3AAE921DD6E1}" {
+          SizeMode Auto
+         }
+         {
+          TextWidgetClass "{5E1B3AABF149911A}" {
+           Name "KillN11"
+           Slot FrameWidgetSlot "{5E1AB2B8F9027449}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 45
+            OffsetRight -45
+            OffsetBottom -30
+           }
+           Text "20"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+        FrameWidgetClass "{5E1B3AABF1499118}" {
+         Name "Frame4"
+         Slot LayoutSlot "{5E1B3AAE921DD134}" {
+          Padding 0 0 0 0
+          SizeMode Fill
+         }
+         {
+          TextWidgetClass "{5E1B3AABF1499119}" {
+           Name "DeathN11"
+           Slot FrameWidgetSlot "{5E1AB2B8FA2AB754}" {
+            OffsetLeft 0
+            OffsetTop 0
+            SizeX 30
+            OffsetRight -30
+            OffsetBottom -30
+           }
+           Text "55"
+           "Font Size" 18
+           "Min Font Size" 18
+           "Vertical Alignment" Center
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    TextWidgetClass "{5E1AB28A2C4DEB78}" {
+     Name "PlayerServeur"
+     Slot FrameWidgetSlot "{5E1AB28A2C4DEB54}" {
+      PositionX 818.002
+      OffsetLeft 818.002
+      PositionY 47.931
+      OffsetTop 47.931
+      SizeX 83.22
+      OffsetRight -901.222
+      SizeY 28.458
+      OffsetBottom -76.389
+     }
+     Text "50 / 124 "
+    }
+    TextWidgetClass "{5E1AB2B2582461E2}" {
+     Name "NamePlayer"
+     Slot FrameWidgetSlot "{5E1AB28A2C4DEB54}" {
+      PositionX 25.796
+      OffsetLeft 25.796
+      PositionY 175.756
+      OffsetTop 175.756
+      SizeX 379.912
+      OffsetRight -405.708
+      SizeY 37.918
+      OffsetBottom -213.674
+     }
+     Text "AQWKA"
+     "Font Size" 35
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+    }
+    TextWidgetClass "{5E1AB2B244D17E85}" {
+     Name "YourRanking"
+     Slot FrameWidgetSlot "{5E1AB28A2C4DEB54}" {
+      PositionX 216.063
+      OffsetLeft 216.063
+      PositionY 222.647
+      OffsetTop 222.647
+      SizeX 26.189
+      OffsetRight -242.252
+      SizeY 28.458
+      OffsetBottom -251.105
+     }
+     Text "50"
+    }
+    TextWidgetClass "{5E1AB2B241B3D208}" {
+     Name "PlayerRanking"
+     Slot FrameWidgetSlot "{5E1AB28A2C4DEB54}" {
+      PositionX 321.781
+      OffsetLeft 321.781
+      PositionY 223.194
+      OffsetTop 223.194
+      SizeX 25.404
+      OffsetRight -347.185
+      SizeY 28.458
+      OffsetBottom -251.652
+     }
+     Text "70"
+    }
+    TextWidgetClass "{5E1AB2B307C61623}" {
+     Name "YourLevel"
+     Slot FrameWidgetSlot "{5E1AB28A2C4DEB54}" {
+      PositionX 98.791
+      OffsetLeft 98.791
+      PositionY 332.182
+      OffsetTop 332.182
+      SizeX 26.189
+      OffsetRight -124.98
+      SizeY 28.458
+      OffsetBottom -360.64
+     }
+     Color 0.824 0.643 0.102 1
+     Text "50"
+    }
+    TextWidgetClass "{5E1AB2B3010F1C3E}" {
+     Name "KillsCount"
+     Slot FrameWidgetSlot "{5E1AB28A2C4DEB54}" {
+      PositionX 99.45
+      OffsetLeft 99.45
+      PositionY 401.688
+      OffsetTop 401.688
+      SizeX 26.189
+      OffsetRight -125.639
+      SizeY 28.458
+      OffsetBottom -430.146
+     }
+     Text "50"
+    }
+    TextWidgetClass "{5E1AB2B302A7C748}" {
+     Name "DeathCount"
+     Slot FrameWidgetSlot "{5E1AB28A2C4DEB54}" {
+      PositionX 296.255
+      OffsetLeft 296.255
+      PositionY 403.327
+      OffsetTop 403.327
+      SizeX 26.189
+      OffsetRight -322.444
+      SizeY 28.458
+      OffsetBottom -431.785
+     }
+     Color 0.624 0.157 0.157 1
+     Text "50"
+    }
+    TextWidgetClass "{5E1AB2B30D55F2D7}" {
+     Name "MoneyBank"
+     Slot FrameWidgetSlot "{5E1AB28A2C4DEB54}" {
+      PositionX 244.891
+      OffsetLeft 244.891
+      PositionY 331.281
+      OffsetTop 331.281
+      SizeX 96.157
+      OffsetRight -341.048
+      SizeY 28.458
+      OffsetBottom -359.739
+     }
+     Color 0.318 0.561 0.071 1
+     Text "$ 500000"
+     "Horizontal Alignment" Right
+    }
+    TextWidgetClass "{5E1AB2B34DDD2890}" {
+     Name "MoneyEarned"
+     Slot FrameWidgetSlot "{5E1AB28A2C4DEB54}" {
+      PositionX 291.525
+      OffsetLeft 291.525
+      PositionY 459.116
+      OffsetTop 459.116
+      SizeX 96.157
+      OffsetRight -387.682
+      SizeY 28.458
+      OffsetBottom -487.574
+     }
+     Color 0.318 0.561 0.071 1
+     Text "$ 500000"
+     "Horizontal Alignment" Right
+    }
+    TextWidgetClass "{5E1AB2B34BFFAD32}" {
+     Name "XpGained"
+     Slot FrameWidgetSlot "{5E1AB28A2C4DEB54}" {
+      PositionX 67.274
+      OffsetLeft 67.274
+      PositionY 459.674
+      OffsetTop 459.674
+      SizeX 96.158
+      OffsetRight -163.432
+      SizeY 28.458
+      OffsetBottom -488.132
+     }
+     Color 0.824 0.643 0.1 1
+     Text "25000"
+     "Horizontal Alignment" Right
+    }
+    TextWidgetClass "{5E1B3AA79AACA944}" : "{3132F64DB8B4CB44}UI/layouts/WidgetLibrary/TextWidgets/Text_Body.layout" {
+     Name "Session_Time"
+     Slot FrameWidgetSlot "{5E1B3AA79AACA832}" {
+      PositionX 223.998
+      OffsetLeft 223.998
+      PositionY 264.86
+      OffsetTop 264.86
+      SizeX 128.474
+      OffsetRight -352.472
+      SizeY 30
+      OffsetBottom -294.86
+     }
+     components {
+      SCR_SessionDurationUIComponent "{5630B47DFD416DD4}" {
+      }
+     }
+     Text "00:01:22:59"
+     "Font Size" 24
+     "Min Font Size" 24
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+     FontProperties FontProperties "{546AF489DFD25402}" {
+     }
+    }
+   }
+  }
+ }
+}

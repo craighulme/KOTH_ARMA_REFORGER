@@ -1,0 +1,18 @@
+$grp GenericEntity : "{B956CCBC147690A4}Prefabs/MP/Triggers/KOTH_RepairZoneTrigger.et" {
+ {
+  coords 4846.824 25.349 12030.675
+  angleX 2.215
+  angleY 90
+ }
+ {
+  coords 5494.885 41.608 10804.232
+  angleX 1.219
+  angleY -164.944
+  angleZ 2.14
+ }
+ {
+  coords 4647.457 23.716 9567.981
+  angleX -2.215
+  angleY -90
+ }
+}

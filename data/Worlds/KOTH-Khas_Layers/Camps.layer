@@ -1,0 +1,108 @@
+GenericEntity KOTH_FirstSpawn : "{0D777787DAAD3541}Prefabs/Structures/KOTH/Camp_Blufor.et" {
+ coords 3049.997 148.84 8889.834
+ angleY 75
+}
+GenericEntity KOTH_ThirdSpawn : "{108B69D9D8DDE8B0}Prefabs/Structures/KOTH/Camp_Opfor.et" {
+ coords 2114.854 135.375 6108.979
+}
+$grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+ KOTH_FirstVehicleSpawn {
+  coords 3040.637 147.656 8918.949
+  angleY 132.803
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    KOTH_FirstVehicleSpawn_1 {
+     coords 42.627 1.082 26.805
+     angleX -2.444
+     angleY -59.972
+     angleZ -0.656
+    }
+    KOTH_FirstVehicleSpawn_2 {
+     coords -37.888 -0.573 29.948
+     angleX 2.192
+     angleY 74.99
+     angleZ -1.265
+    }
+   }
+  }
+ }
+ KOTH_SecondVehicleSpawn {
+  coords 5011.516 131.586 5351.47
+  angleY 15
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    KOTH_SecondVehicleSpawn_1 {
+     coords 52.271 1.086 -15.785
+     angleY -81.809
+    }
+    KOTH_SecondVehicleSpawn_2 {
+     coords 24.845 0.329 -27.06
+    }
+   }
+  }
+ }
+ KOTH_ThirdVehicleSpawn {
+  coords 2095.281 134.669 6132.257
+  angleY 96.025
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    KOTH_ThirdVehicleSpawn_1 {
+     coords -17.338 -0.426 23.442
+    }
+    KOTH_ThirdVehicleSpawn_2 {
+     coords -27.909 1.094 -6.8
+    }
+   }
+  }
+ }
+}
+$grp GenericEntity : "{67EE7343073E3AF4}Prefabs/Systems/AmbientVehicles/AmbientVehicleSpawnpoint_US.et" {
+ KOTH_FirstFreeHelo {
+  coords 3021.412 147.726 8902.468
+  angleY 165
+ }
+ KOTH_FirstFreeTruck {
+  coords 3038.806 148.257 8897.929
+  angleY 70.938
+ }
+ KOTH_SecondFreeTruck {
+  coords 5034.84 131.974 5356.643
+  angleY -93.575
+ }
+ KOTH_SecondFreeHelo {
+  coords 5035.52 131.421 5370.643
+  angleY -74.987
+ }
+ KOTH_ThirdFreeTruck {
+  coords 2125.498 134.344 6099.072
+  angleY 42.859
+ }
+ KOTH_ThirdFreeHelo {
+  coords 2088.127 133.91 6090.864
+  angleY 42.859
+ }
+}
+GenericEntity KOTH_SecondSpawn : "{900D62CF65FB7496}Prefabs/Structures/KOTH/Camp_Indfor.et" {
+ coords 5045.856 132.916 5347.598
+ angleY -120
+}
+$grp GenericEntity : "{B956CCBC147690A4}Prefabs/MP/Triggers/KOTH_RepairZoneTrigger.et" {
+ {
+  coords 3048.689 147.863 8826.479
+  angleX -2.949
+  angleY 161.553
+  angleZ 1.181
+ }
+ {
+  coords 4967.474 132.171 5437.892
+  angleX 2.158
+  angleY -26.396
+  angleZ -1.189
+ }
+ {
+  coords 2181.604 135.425 6184.289
+  angleX 1.71
+  angleY 44.992
+  angleZ -1.006
+ }
+}

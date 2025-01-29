@@ -1,0 +1,54 @@
+$grp GenericEntity : "{9FFB7FFA1B700ED8}Prefabs/Structures/KOTH/ArmaTowerReforged_KOTH_1.et" {
+ {
+  components {
+   KOTH_SCR_TowerMapDescriptorComponent "{61173C9CBAD7800F}" {
+    m_sImageQuadKoth "KOTH_Tower_1"
+   }
+  }
+  coords 4416.397 8.619 10855.74
+  angleY -9.976
+ }
+ {
+  components {
+   KOTH_SCR_TowerMapDescriptorComponent "{61173C9CBAD7800F}" {
+    m_sImageQuadKoth "KOTH_Tower_2"
+   }
+   MeshObject "{617227540B777245}" {
+    Materials {
+     MaterialAssignClass "{629CCEEA1E6BDC76}" {
+      SourceMaterial "ATR_TowerNumber"
+      AssignedMaterial "{4F9328E9B1A36D83}Assets/Structures/Vanilla/Data/ATR_TowerNumber_2.emat"
+     }
+    }
+   }
+  }
+  coords 4552.229 16.848 10663.297
+  angleY -9.17
+ }
+ {
+  components {
+   KOTH_SCR_TowerMapDescriptorComponent "{61173C9CBAD7800F}" {
+    m_sImageQuadKoth "KOTH_Tower_3"
+   }
+   MeshObject "{617227540B777245}" {
+    Materials {
+     MaterialAssignClass "{629CCEEA18CFA78C}" {
+      SourceMaterial "ATR_TowerNumber"
+      AssignedMaterial "{BB9B6F71BC7E05F7}Assets/Structures/Vanilla/Data/ATR_TowerNumber_3.emat"
+     }
+    }
+   }
+  }
+  coords 4315.954 13.424 10616.559
+  angleY 84.549
+ }
+}
+GenericEntity : "{ABC93329FA725C45}Prefabs/Structures/KOTH/ArmaTowerReforged_KOTH_4_(Stacked).et" {
+ components {
+  KOTH_SCR_TowerMapDescriptorComponent "{61173C9CAFC496D1}" {
+   m_sImageQuadKoth "KOTH_Tower_4"
+  }
+ }
+ coords 4425.891 12.028 10714.957
+ angleY 171.749
+}

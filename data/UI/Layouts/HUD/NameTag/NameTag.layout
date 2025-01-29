@@ -1,0 +1,51 @@
+FrameWidgetClass {
+ {
+  HorizontalLayoutWidgetClass "{60F50B13540F69C6}" {
+   Name "HorizontalLayout0"
+   Slot FrameWidgetSlot "{60F50B13540F69E2}" {
+    PositionX -19.283
+    OffsetLeft -19.283
+    PositionY -71.775
+    OffsetTop -71.775
+    SizeX 30
+    OffsetRight -10.717
+    SizeY 30
+    OffsetBottom 41.775
+   }
+   {
+    FrameWidgetClass "{60F50B13540F69C5}" {
+     Name "Frame0"
+     Slot LayoutSlot "{60F50B13540F69D7}" {
+     }
+     {
+      ImageWidgetClass "{60F50B137E7D1648}" {
+       Name "IconFactionKOTH"
+       Slot FrameWidgetSlot "{60F50B137E7D2991}" {
+        OffsetLeft 0
+        OffsetTop 0
+        SizeX 64
+        OffsetRight -64
+        SizeY 64
+        OffsetBottom -64
+       }
+       "Inherit Color" 1
+       Texture "{70E828A2F6EBE7D0}UI/Textures/Nametags/nametagicons.imageset"
+       Image "pointer-small"
+       Size 64 64
+      }
+     }
+    }
+   }
+  }
+  HorizontalLayoutWidgetClass "{00000000490622C6}" {
+   Prefab "{00000000490622C6}"
+   {
+    FrameWidgetClass "{60F50B1323C386AE}" {
+     Name "Frame0"
+     Slot LayoutSlot "{60F50B0E9216232A}" {
+     }
+    }
+   }
+  }
+ }
+}

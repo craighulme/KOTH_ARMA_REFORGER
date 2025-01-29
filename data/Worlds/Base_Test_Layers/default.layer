@@ -1,0 +1,222 @@
+$grp GenericEntity {
+ {
+  coords 124.654 1.236 105.51
+ }
+ {
+  coords 124.627 1.233 111.082
+ }
+ {
+  coords 124.547 1.253 109.987
+ }
+ {
+  coords 124.692 1.236 115.004
+ }
+ {
+  coords 124.627 1.236 112.518
+ }
+ {
+  coords 124.088 1.2 103.292
+ }
+ {
+  coords 124.599 1.236 104.224
+ }
+ {
+  coords 124.647 1.236 116.308
+ }
+ {
+  coords 124.518 1.236 103.253
+ }
+ {
+  coords 124.215 1.236 108.578
+ }
+ {
+  coords 124.648 1.236 106.779
+ }
+ {
+  coords 124.188 1.254 105.83
+ }
+ {
+  coords 124.944 1.236 107.929
+ }
+ {
+  coords 124.723 1.236 102.349
+ }
+ {
+  coords 124.626 1.236 113.891
+ }
+ {
+  coords 124.086 1.236 107.037
+ }
+ {
+  coords 124.055 1.236 104.517
+ }
+}
+GenericEntity : "{026CE108BFB3EC03}Prefabs/Weapons/MachineGuns/UK59/MG_UK59.et" {
+ coords 124.572 1.368 112.02
+}
+GenericEntity : "{33C686F10D37ABA1}Prefabs/Weapons/Core/Suppressor_Generic_9mm.et" {
+ coords 123.892 1.001 107.818
+}
+SCR_ChimeraCharacter : "{4A513974D5682D30}Prefabs/Characters/Factions/KOTH_Base/Character_KOTH_OPFOR.et" {
+ coords 113.656 1.001 100.737
+}
+SCR_ChimeraCharacter : "{7C98AF3D5AB4A519}Prefabs/Characters/Factions/KOTH_Base/Character_KOTH_BLUFOR.et" {
+ coords 117.544 1.001 100.671
+}
+GenericEntity : "{7CB432CC4ED704E1}Prefabs/Weapons/Core/Suppressor_Generic_556.et" {
+ coords 124.031 1.001 107.973
+ angleY 0
+}
+GenericEntity : "{904AF79F5926399A}Prefabs/Weapons/Core/Suppressor_Punky_NT4.et" {
+ coords 123.926 1.001 107.682
+ angleY 0
+}
+GenericEntity : "{BF2C40A326D55B99}Prefabs/Weapons/Attachments/Optics/Vudu1-6.et" {
+ coords 123.789 1.001 109.276
+}
+GenericEntity : "{C4B5C00E15194948}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/Vudu NEW2.et" {
+ coords 123.749 1.001 109.641
+}
+GenericEntity : "{CA05E99A9432A04C}Prefabs/Weapons/Rifles/3RBN_MK17_base.et" {
+ coords 124.097 1.001 109.313
+}
+SCR_ChimeraCharacter : "{E1E2BA75E5E2E4CE}Prefabs/Characters/Factions/KOTH_Base/Character_KOTH_INDFOR.et" {
+ coords 115.517 1.001 100.721
+}
+GenericEntity : "{F7104825C77AB12F}Prefabs/Weapons/Core/Suppressor_556_SC.et" {
+ coords 123.872 1.001 108.051
+ angleY 0
+}
+GenericEntity : "{FBD32285925CFBE7}Prefabs/Editor/Plane_01/GridPlane_100x100.et" {
+ coords 0 1.001 0
+ scale 0.25
+ {
+  $grp GenericEntity : "{FBD32285925CFBE7}Prefabs/Editor/Plane_01/GridPlane_100x100.et" {
+   {
+    coords 0 0 200
+   }
+   {
+    coords 0 0 400
+   }
+   {
+    coords 0 0 600
+   }
+   {
+    coords 0 0 800
+   }
+   {
+    coords 0 0 1000
+   }
+   {
+    coords 200 0 0
+    {
+     $grp GenericEntity : "{FBD32285925CFBE7}Prefabs/Editor/Plane_01/GridPlane_100x100.et" {
+      {
+       coords 0 0 400
+      }
+      {
+       coords 0 0 600
+      }
+      {
+       coords 0 0 800
+      }
+      {
+       coords 0 0 1000
+      }
+      {
+       coords 0 0 200
+      }
+     }
+    }
+   }
+   {
+    coords 400 0 0
+    {
+     $grp GenericEntity : "{FBD32285925CFBE7}Prefabs/Editor/Plane_01/GridPlane_100x100.et" {
+      {
+       coords 0 0 400
+      }
+      {
+       coords 0 0 600
+      }
+      {
+       coords 0 0 800
+      }
+      {
+       coords 0 0 1000
+      }
+      {
+       coords 0 0 200
+      }
+     }
+    }
+   }
+   {
+    coords 600 0 0
+    {
+     $grp GenericEntity : "{FBD32285925CFBE7}Prefabs/Editor/Plane_01/GridPlane_100x100.et" {
+      {
+       coords 0 0 400
+      }
+      {
+       coords 0 0 600
+      }
+      {
+       coords 0 0 800
+      }
+      {
+       coords 0 0 1000
+      }
+      {
+       coords 0 0 200
+      }
+     }
+    }
+   }
+   {
+    coords 800 0 0
+    {
+     $grp GenericEntity : "{FBD32285925CFBE7}Prefabs/Editor/Plane_01/GridPlane_100x100.et" {
+      {
+       coords 0 0 400
+      }
+      {
+       coords 0 0 600
+      }
+      {
+       coords 0 0 800
+      }
+      {
+       coords 0 0 1000
+      }
+      {
+       coords 0 0 200
+      }
+     }
+    }
+   }
+   {
+    coords 1000 0 0
+    {
+     $grp GenericEntity : "{FBD32285925CFBE7}Prefabs/Editor/Plane_01/GridPlane_100x100.et" {
+      {
+       coords 0 0 400
+      }
+      {
+       coords 0 0 600
+      }
+      {
+       coords 0 0 800
+      }
+      {
+       coords 0 0 1000
+      }
+      {
+       coords 0 0 200
+      }
+     }
+    }
+   }
+  }
+ }
+}

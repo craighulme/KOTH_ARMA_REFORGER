@@ -1,0 +1,57 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  OverlayWidgetClass "{60FCB347E7DCC3E3}" {
+   Name "DialogBase0"
+   Slot FrameWidgetSlot "{5510B6AD02D313DF}" {
+    OffsetLeft 0
+    OffsetTop 0
+    SizeX 1920
+    OffsetRight -1920
+    SizeY 1080
+    OffsetBottom -1080
+   }
+   {
+    VerticalLayoutWidgetClass "{5510B6AD7C32873E}" {
+     Prefab "{5510B6AD7C32873E}"
+     {
+      ImageWidgetClass "{5510B6AC95797C87}" {
+       Prefab "{5510B6AC95797C87}"
+       Color 0.761 0.392 0.078 1
+      }
+      TextWidgetClass "{5510B6AC7B039C4D}" {
+       Prefab "{5510B6AC7B039C4D}"
+       Text "Are you sure you want to buy permanently ?"
+      }
+      OverlayWidgetClass "{5510B6ACD309D043}" {
+       Prefab "{5510B6ACD309D043}"
+       {
+        TextWidgetClass "{60FCB34555B2DC33}" {
+         Name "Text0"
+         Slot OverlayWidgetSlot "{60FCB34555B2DC63}" {
+         }
+         Text "\"MK17\" for \"20000$\""
+         "Font Size" 40
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{5510B6AC9B6E1FC2}" {
+       Prefab "{5510B6AC9B6E1FC2}"
+       {
+        ButtonWidgetClass "{5592C59F26008352}" {
+         Prefab "{5592C59F26008352}"
+         components {
+          SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+           m_bShowBorderOnHover 1
+           m_sActionName "MenuSelect"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

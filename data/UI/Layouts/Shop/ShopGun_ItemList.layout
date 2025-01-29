@@ -1,0 +1,555 @@
+SizeLayoutWidgetClass {
+ Name "SizeLayout0"
+ Slot OverlayWidgetSlot "{5C9E2A9FC993FEE7}" {
+  HorizontalAlign 3
+  VerticalAlign 3
+  Padding 0 5 0 2
+ }
+ AllowHeightOverride 1
+ HeightOverride 100
+ {
+  HorizontalLayoutWidgetClass "{60FEEA3BC15D379D}" {
+   Name "Overlay"
+   Slot AlignableSlot "{5C9E2A9FEE07C074}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   {
+    OverlayWidgetClass "{60FEEA3BC15D379B}" {
+     Name "ItemList"
+     Slot LayoutSlot "{5C982A3F129726D2}" {
+      SizeMode Fill
+      FillWeight 2
+     }
+     {
+      ImageWidgetClass "{60FEEA3BC15D3799}" {
+       Name "Image0"
+       Slot OverlayWidgetSlot "{5C982A3373E4C91A}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+        Padding 0 0 0 0
+       }
+       Color 0 0 0 0.498
+      }
+      HorizontalLayoutWidgetClass "{60FEEA3BC15D3797}" {
+       Name "PreviewLayout"
+       Slot OverlayWidgetSlot "{5E272AA67E3D5786}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       {
+        SizeLayoutWidgetClass "{60FEEC10C5B2D698}" {
+         Name "SizePreview"
+         Slot LayoutSlot "{60FEEC10C5B2D6F2}" {
+          Padding 0 0 700 0
+          SizeMode Fill
+         }
+         WidthOverride 210
+         HeightOverride 105
+         {
+          ItemPreviewWidgetClass "{60FEEA3BC15D37EF}" {
+           Name "Preview_Image"
+           Slot AlignableSlot "{60FEEC10F766C761}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           Filter Bilinear
+           Format LDR
+           "Blend mode" Blend
+          }
+         }
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{60FEEA3BC15D37ED}" {
+       Name "BaseLayout"
+       Slot OverlayWidgetSlot "{5C982A3F27B50ED7}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       {
+        VerticalLayoutWidgetClass "{60FEEA3BC15D37EB}" {
+         Name "DescLayout"
+         Slot LayoutSlot "{5C982A3ED9633687}" {
+          Padding 540 5 0 5
+          SizeMode Fill
+          FillWeight 4
+         }
+         {
+          TextWidgetClass "{60FEEA3BC15D37E8}" {
+           Name "ItemName"
+           Slot LayoutSlot "{5C982A3EFB88D5EA}" {
+            HorizontalAlign 2
+            Padding 0 0 15 3
+           }
+           Text "Item Name"
+           "Font Size" 28
+           "Min Font Size" 28
+           FontProperties FontProperties "{5C982A3EEE07FC34}" {
+            Bold 1
+           }
+          }
+          HorizontalLayoutWidgetClass "{60FEEA3BC15D37E6}" {
+           Name "BuyOnce_Layout"
+           Slot LayoutSlot "{5E1D46E3F35C9779}" {
+            VerticalAlign 1
+            Padding 0 0 10 0
+            SizeMode Fill
+           }
+           {
+            OverlayWidgetClass "{60FEEA3BC15D37E7}" {
+             Name "PriceOnce"
+             Slot LayoutSlot "{5C982A3F129726D2}" {
+              HorizontalAlign 2
+              Padding 50 0 10 0
+              SizeMode Fill
+             }
+             {
+              HorizontalLayoutWidgetClass "{60FEEA3BC15D37E5}" {
+               Name "HorizontalLayout0"
+               Slot OverlayWidgetSlot "{5C982A3E5AB5202F}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+                Padding 0 0 0 0
+               }
+               {
+                TextWidgetClass "{60FEEA3BC15D37E2}" {
+                 Name "PriceOnceText"
+                 Slot LayoutSlot "{5C982A3E46E3921A}" {
+                  SizeMode Fill
+                 }
+                 Color 0.259 0.686 0.365 1
+                 Text "1234 $"
+                 "Font Size" 30
+                 "Min Font Size" 18
+                 "Horizontal Alignment" Center
+                 "Vertical Alignment" Center
+                }
+               }
+              }
+             }
+            }
+            OverlayWidgetClass "{60FEEA3BC15D37E3}" {
+             Name "PurchaseOnce"
+             Slot LayoutSlot "{5C982A3F129726D2}" {
+              SizeMode Fill
+              FillWeight 0.5
+             }
+             {
+              ImageWidgetClass "{60FEEA3BC15D37E1}" {
+               Name "Image0"
+               Slot OverlayWidgetSlot "{5C982A3373E4C91A}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+               }
+               Color 0 0 0 0.498
+              }
+              ButtonWidgetClass "{60FEEA3BC15D37FF}" : "{267D0C58DBFE24FA}UI/Layouts/Shop/KOTH_BuyOnceButton.layout" {
+               Name "PurchaseOnceButton"
+               Slot OverlayWidgetSlot "{5E272AA1639BC7BD}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+                Padding 2 2 2 2
+               }
+               components {
+                SCR_ButtonBaseComponent "{5E272AA17FC54394}" {
+                 m_bMouseOverToFocus 1
+                 m_bShowBorderOnFocus 1
+                }
+               }
+               {
+                OverlayWidgetClass "{5E272AA14F65CC8A}" {
+                 Prefab "{5E272AA14F65CC8A}"
+                 {
+                  ImageWidgetClass "{5E272AA14F65CC89}" {
+                   Prefab "{5E272AA14F65CC89}"
+                   Slot OverlayWidgetSlot "{5452C531C2876D22}" {
+                    VerticalAlign 1
+                   }
+                  }
+                  TextWidgetClass "{5E272AA14F65CC87}" {
+                   Prefab "{5E272AA14F65CC87}"
+                   Slot OverlayWidgetSlot "{547290FBCA5E9358}" {
+                    Padding 0 5 0 5
+                   }
+                  }
+                 }
+                }
+               }
+              }
+              OverlayWidgetClass "{60FEEA3BC15D37FB}" {
+               Name "PurchaseOnceHINT"
+               Slot OverlayWidgetSlot "{5E2803422E4EEF65}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+                Padding 2 2 2 2
+               }
+               "Is Visible" 0
+               Color 1 1 1 1
+               {
+                ImageWidgetClass "{60FEEA3BC15D37F8}" {
+                 Name "Background"
+                 Slot OverlayWidgetSlot "{5452C531C2876D22}" {
+                  HorizontalAlign 3
+                  VerticalAlign 3
+                  Padding 0 0 0 0
+                 }
+                 Color 0 0.165 0.041 0.49
+                 "Shadow Color" 0 0 0 1
+                }
+                TextWidgetClass "{60FEEA3BC15D37F6}" : "{A6E079574AACF9A0}UI/layouts/WidgetLibrary/TextWidgets/Text_Interactive.layout" {
+                 Name "Content"
+                 Slot OverlayWidgetSlot "{547290FBCA5E9358}" {
+                  Padding 0 12 0 12
+                 }
+                 Clipping False
+                 "Inherit Color" 1
+                 Text "EQUIPED"
+                 "Font Size" 17
+                 "Min Font Size" 17
+                 FontProperties FontProperties "{546AF489DFD25402}" {
+                  Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                  ShadowSize 16
+                  ShadowOffset 3 3
+                  ShadowOpacity 0.3
+                 }
+                }
+               }
+              }
+              ButtonWidgetClass "{60FEEA3BC15D37F4}" : "{267D0C58DBFE24FA}UI/Layouts/Shop/KOTH_BuyOnceButton.layout" {
+               Name "EquipButton"
+               Slot OverlayWidgetSlot "{5E272AA1639BC7BD}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+                Padding 2 2 2 2
+               }
+               "Is Visible" 0
+               {
+                OverlayWidgetClass "{5E272AA14F65CC8A}" {
+                 Prefab "{5E272AA14F65CC8A}"
+                 {
+                  TextWidgetClass "{5E272AA14F65CC87}" {
+                   Prefab "{5E272AA14F65CC87}"
+                   Text "EQUIP"
+                  }
+                 }
+                }
+               }
+              }
+              OverlayWidgetClass "{60FEEA3BC15D37F2}" {
+               Name "EquipePermHINT"
+               Slot OverlayWidgetSlot "{5E2803422E4EEF65}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+               }
+               "Is Visible" 0
+               Color 1 1 1 1
+               {
+                ImageWidgetClass "{60FEEA3BC15D37F0}" {
+                 Name "Background"
+                 Slot OverlayWidgetSlot "{5452C531C2876D22}" {
+                  HorizontalAlign 3
+                  VerticalAlign 3
+                  Padding 0 0 0 0
+                 }
+                 Color 1 1 1 0.49
+                 "Shadow Color" 0 0 0 1
+                }
+                TextWidgetClass "{60FEEA3BC15D37F1}" : "{A6E079574AACF9A0}UI/layouts/WidgetLibrary/TextWidgets/Text_Interactive.layout" {
+                 Name "Content"
+                 Slot OverlayWidgetSlot "{547290FBCA5E9358}" {
+                  Padding 0 12 0 12
+                 }
+                 Clipping False
+                 "Inherit Color" 1
+                 Text "EQUIP"
+                 "Font Size" 17
+                 "Min Font Size" 17
+                 FontProperties FontProperties "{546AF489DFD25402}" {
+                  Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                  ShadowSize 16
+                  ShadowOffset 3 3
+                  ShadowOpacity 0.3
+                 }
+                }
+               }
+              }
+              OverlayWidgetClass "{60FEEA3BC15D37CF}" {
+               Name "PurchaseOnceNoLVL"
+               Slot OverlayWidgetSlot "{5E2803422E4EEF65}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+                Padding 2 2 2 2
+               }
+               "Is Visible" 0
+               Color 1 1 1 1
+               {
+                ImageWidgetClass "{60FEEA3BC15D37CC}" {
+                 Name "Background"
+                 Slot OverlayWidgetSlot "{5452C531C2876D22}" {
+                  HorizontalAlign 3
+                  Padding 0 0 0 0
+                 }
+                 Color 1 1 1 0.106
+                 "Shadow Color" 0 0 0 1
+                }
+                TextWidgetClass "{60FEEA3BC15D37CA}" : "{A6E079574AACF9A0}UI/layouts/WidgetLibrary/TextWidgets/Text_Interactive.layout" {
+                 Name "Content"
+                 Slot OverlayWidgetSlot "{547290FBCA5E9358}" {
+                  Padding 0 5 0 5
+                 }
+                 Clipping False
+                 "Inherit Color" 1
+                 Text "BUY ONCE"
+                 "Font Size" 17
+                 "Min Font Size" 17
+                 FontProperties FontProperties "{546AF489DFD25402}" {
+                  Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                  ShadowSize 16
+                  ShadowOffset 3 3
+                  ShadowOpacity 0.3
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+          HorizontalLayoutWidgetClass "{60FEEA3BC15D37CB}" {
+           Name "BuyPerm_Layout0"
+           Slot LayoutSlot "{5E1D46E3F35C9779}" {
+            Padding 0 3 10 0
+            SizeMode Fill
+           }
+           {
+            OverlayWidgetClass "{60FEEA3BC15D37C9}" {
+             Name "PricePerm"
+             Slot LayoutSlot "{5C982A3F129726D2}" {
+              HorizontalAlign 2
+              Padding 50 0 10 0
+              SizeMode Fill
+             }
+             {
+              HorizontalLayoutWidgetClass "{60FEEA3BC15D37C6}" {
+               Name "HorizontalLayout0"
+               Slot OverlayWidgetSlot "{5C982A3E5AB5202F}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+               }
+               {
+                TextWidgetClass "{60FEEA3BC15D37C4}" {
+                 Name "PricePermText"
+                 Slot LayoutSlot "{5C982A3E46E3921A}" {
+                  SizeMode Fill
+                 }
+                 Color 0.259 0.686 0.365 1
+                 Text "123456 $"
+                 "Font Size" 30
+                 "Min Font Size" 18
+                 "Horizontal Alignment" Center
+                 "Vertical Alignment" Center
+                }
+               }
+              }
+             }
+            }
+            OverlayWidgetClass "{60FEEA3BC15D37C5}" {
+             Name "PurchasePerm"
+             Slot LayoutSlot "{5C982A3F129726D2}" {
+              SizeMode Fill
+              FillWeight 0.5
+             }
+             {
+              ImageWidgetClass "{60FEEA3BC15D37C3}" {
+               Name "Image0"
+               Slot OverlayWidgetSlot "{5C982A3373E4C91A}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+                Padding 0 0 0 0
+               }
+               Color 0 0 0 0.498
+              }
+              ButtonWidgetClass "{60FEEA3BC15D37C0}" : "{DA0E2FDE98B85756}UI/Layouts/Shop/KOTH_BuyPermButton.layout" {
+               Name "PurchasePermanentButton"
+               Slot OverlayWidgetSlot "{5E272AA5189C9C17}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+                Padding 2 2 2 2
+               }
+               "Is Visible" 0
+              }
+              OverlayWidgetClass "{60FEEA3BC15D37DF}" {
+               Name "PurchasePermHINT"
+               Slot OverlayWidgetSlot "{5E2803422E4EEF65}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+                Padding 2 2 2 2
+               }
+               "Is Visible" 0
+               Color 1 1 1 1
+               {
+                ImageWidgetClass "{60FEEA3BC15D37DD}" {
+                 Name "Background"
+                 Slot OverlayWidgetSlot "{5452C531C2876D22}" {
+                  HorizontalAlign 3
+                  VerticalAlign 3
+                  Padding 0 0 0 0
+                 }
+                 Color 0.251 0.502 0 0.49
+                 "Shadow Color" 0 0 0 1
+                }
+                TextWidgetClass "{60FEEA3BC15D37DA}" : "{A6E079574AACF9A0}UI/layouts/WidgetLibrary/TextWidgets/Text_Interactive.layout" {
+                 Name "Content"
+                 Slot OverlayWidgetSlot "{547290FBCA5E9358}" {
+                  Padding 0 12 0 12
+                 }
+                 Clipping False
+                 "Inherit Color" 1
+                 Text "OWNED"
+                 "Min Font Size" 20
+                 FontProperties FontProperties "{546AF489DFD25402}" {
+                  Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                  ShadowSize 16
+                  ShadowOffset 3 3
+                  ShadowOpacity 0.3
+                 }
+                }
+               }
+              }
+              OverlayWidgetClass "{60FEEA3BC15D37D8}" {
+               Name "DesactivatePermHINT"
+               Slot OverlayWidgetSlot "{5E2803422E4EEF65}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+                Padding 2 2 2 2
+               }
+               Color 1 1 1 1
+               {
+                ImageWidgetClass "{60FEEA3BC15D37D9}" {
+                 Name "Background"
+                 Slot OverlayWidgetSlot "{5452C531C2876D22}" {
+                  HorizontalAlign 3
+                  VerticalAlign 3
+                  Padding 0 0 0 0
+                 }
+                 Color 0.502 0 0 0.49
+                 "Shadow Color" 0 0 0 1
+                }
+                TextWidgetClass "{60FEEA3BC15D37D6}" : "{A6E079574AACF9A0}UI/layouts/WidgetLibrary/TextWidgets/Text_Interactive.layout" {
+                 Name "Content"
+                 Slot OverlayWidgetSlot "{547290FBCA5E9358}" {
+                  Padding 0 12 0 12
+                 }
+                 Clipping False
+                 "Inherit Color" 1
+                 Text "DISABLED"
+                 "Min Font Size" 20
+                 FontProperties FontProperties "{546AF489DFD25402}" {
+                  Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                  ShadowSize 16
+                  ShadowOffset 3 3
+                  ShadowOpacity 0.3
+                 }
+                }
+               }
+              }
+              OverlayWidgetClass "{60FEEA3BC15D37D4}" {
+               Name "PurchasePermNoLVL"
+               Slot OverlayWidgetSlot "{5E2803422E4EEF65}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+                Padding 2 2 2 2
+               }
+               "Is Visible" 0
+               Color 1 1 1 1
+               {
+                ImageWidgetClass "{60FEEA3BC15D37D5}" {
+                 Name "Background"
+                 Slot OverlayWidgetSlot "{5452C531C2876D22}" {
+                  HorizontalAlign 3
+                  VerticalAlign 3
+                  Padding 0 0 0 0
+                 }
+                 Color 1 1 1 0.102
+                 "Shadow Color" 0 0 0 1
+                }
+                TextWidgetClass "{60FEEA3BC15D37D3}" : "{A6E079574AACF9A0}UI/layouts/WidgetLibrary/TextWidgets/Text_Interactive.layout" {
+                 Name "Content"
+                 Slot OverlayWidgetSlot "{547290FBCA5E9358}" {
+                  Padding 0 12 0 12
+                 }
+                 Clipping False
+                 "Inherit Color" 1
+                 Text "PERMANENT BUY"
+                 "Min Font Size" 20
+                 FontProperties FontProperties "{546AF489DFD25402}" {
+                  Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                  ShadowSize 16
+                  ShadowOffset 3 3
+                  ShadowOpacity 0.3
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      TextWidgetClass "{60FEEA3BC15D37D0}" {
+       Name "ResourceName"
+       Slot OverlayWidgetSlot {
+       }
+       "Is Visible" 0
+       Text "Item Name"
+       "Font Size" 28
+       "Min Font Size" 28
+       FontProperties FontProperties "{5C982A3EEE07FC34}" {
+        Bold 1
+       }
+      }
+      ImageWidgetClass "{60FEEA3BC15D37D1}" {
+       Name "FadeLVLReq"
+       Slot OverlayWidgetSlot "{5C982A3373E4C91A}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       "Is Visible" 0
+       Color 0 0 0 0.706
+      }
+      TextWidgetClass "{60FEEA3BC15D362F}" {
+       Name "TextLevelReq"
+       Slot OverlayWidgetSlot "{5E1D46E8C7D66597}" {
+       }
+       "Is Visible" 0
+       Text "LEVEL 40 REQUIRED"
+       "Font Size" 50
+       "Min Font Size" 50
+       "Horizontal Alignment" Center
+       "Vertical Alignment" Center
+       FontProperties FontProperties "{5E275C78564E9261}" {
+        Font "{DE4B66C39B62E39B}UI/Fonts/Purista/Purista Medium.fnt"
+        ShadowSize 16
+        ShadowOffset 3 3
+        ShadowOpacity 0.3
+       }
+      }
+      ButtonWidgetClass "{60FEEA3BC15D362C}" {
+       Name "FakeButtonLevelReq"
+       Slot OverlayWidgetSlot "{6072B1056BE3517E}" {
+        HorizontalAlign 2
+        VerticalAlign 2
+       }
+       "Is Visible" 0
+       Color 1 1 1 0
+      }
+     }
+    }
+   }
+  }
+ }
+}

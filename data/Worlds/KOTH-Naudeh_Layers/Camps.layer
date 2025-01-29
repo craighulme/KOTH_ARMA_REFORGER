@@ -1,0 +1,265 @@
+$grp SplineShapeEntity {
+ {
+  coords 8711.828 55.384 5961.231
+  Points {
+   ShapePoint "{644B55877C9E96BF}" {
+    Position -568.234 -2.235 215.643
+   }
+   ShapePoint "{644B55877166DF92}" {
+    Position -587.292 0.52 206.095
+   }
+   ShapePoint "{644B558770050F7B}" {
+    Position -598.281 6.608 193.39
+   }
+   ShapePoint "{644B558770A6950B}" {
+    Position -610.51 11.157 176.231
+   }
+   ShapePoint "{644B558773C130D1}" {
+    Position -618.318 15.093 152.466
+   }
+   ShapePoint "{644B558775466F6B}" {
+    Position -627.848 18.862 132.793
+   }
+  }
+  {
+   RoadGeneratorEntity : "{8E83BBD5CEC42A11}Prefabs/WEGenerators/Roads/Dirt/RG_Road_Dirt_01.et" {
+    coords -1185.129 19.645 307.426
+    {
+     RoadEntity {
+      ID "523EAA80CAA6C6B5"
+      SplinePoints {
+       ShapePoint "{52346539D885C296}" {
+        Position 616.895 -21.88 -91.783
+       }
+       ShapePoint "{52346539D885C1A2}" {
+        Position 597.837 -19.125 -101.331
+       }
+       ShapePoint "{626A67AAB4A8175B}" {
+        Position 586.848 -13.037 -114.036
+       }
+       ShapePoint "{626A67AAB4A816F1}" {
+        Position 574.619 -8.489 -131.195
+       }
+       ShapePoint "{626A67AAB4A81619}" {
+        Position 566.811 -4.552 -154.96
+       }
+       ShapePoint "{626A67AAB4A81647}" {
+        Position 557.282 -0.783 -174.633
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+      Material "{7498C9A3FD5C052E}Assets/Structures/Infrastructure/Roads/Data/Road_Dirt_01_anizay.emat"
+      RandomSeed 20143
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 8711.828 55.384 5961.231
+  Points {
+   ShapePoint "{644B558B7FA76CF4}" {
+    Position -613.508 11.32 175.461
+   }
+   ShapePoint "{644B558B67E1F006}" {
+    Position -607.277 15.015 152.995
+   }
+   ShapePoint "{644B558B715A05B7}" {
+    Position -582.559 19.781 133.688
+   }
+   ShapePoint "{644B558B71E751B6}" {
+    Position -577.254 24.678 100.922
+   }
+   ShapePoint "{644B558B70471893}" {
+    Position -582.83 25.179 76.515
+   }
+  }
+  {
+   RoadGeneratorEntity : "{8E83BBD5CEC42A11}Prefabs/WEGenerators/Roads/Dirt/RG_Road_Dirt_01.et" {
+    coords -555.993 19.762 135.455
+    {
+     RoadEntity {
+      ID "523EAA80CAA6C6B5"
+      SplinePoints {
+       ShapePoint "{52346539D885C296}" {
+        Position -57.515 -8.441 40.006
+       }
+       ShapePoint "{52346539D885C1A2}" {
+        Position -51.284 -4.747 17.541
+       }
+       ShapePoint "{626A67AAB4A8175B}" {
+        Position -26.566 0.02 -1.767
+       }
+       ShapePoint "{626A67AAB4A816F1}" {
+        Position -21.261 4.916 -34.532
+       }
+       ShapePoint "{644B558B67E1DD36}" {
+        Position -26.837 5.417 -58.939
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+      Material "{7498C9A3FD5C052E}Assets/Structures/Infrastructure/Roads/Data/Road_Dirt_01_anizay.emat"
+      RandomSeed 20143
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 9414.139 66.128 4873.44
+  Points {
+   ShapePoint "{644B558A710C41B7}" {
+    Position -5.693 0.713 -4.751
+   }
+   ShapePoint "{644B558A71546944}" {
+    Position -5.771 0.063 9.602
+   }
+   ShapePoint "{644B558A7327EAB7}" {
+    Position -12.326 -1.46 25.351
+   }
+   ShapePoint "{644B558A727AC18F}" {
+    Position -28.769 1.837 38.589
+   }
+  }
+  {
+   RoadGeneratorEntity : "{8E83BBD5CEC42A11}Prefabs/WEGenerators/Roads/Dirt/RG_Road_Dirt_01.et" {
+    coords -22.45 1.192 37.68
+    {
+     RoadEntity {
+      ID "523EAA80CAA6C6B5"
+      SplinePoints {
+       ShapePoint "{52346539D885C296}" {
+        Position 16.757 -0.479 -42.431
+       }
+       ShapePoint "{52346539D885C1A2}" {
+        Position 16.679 -1.129 -28.078
+       }
+       ShapePoint "{626A67AAB4A8175B}" {
+        Position 10.124 -2.652 -12.329
+       }
+       ShapePoint "{626A67AAB4A816F1}" {
+        Position -6.318 0.645 0.91
+       }
+      }
+      IsClosedSpline 0
+      Width 4
+      Material "{7498C9A3FD5C052E}Assets/Structures/Infrastructure/Roads/Data/Road_Dirt_01_anizay.emat"
+      RandomSeed 20143
+     }
+    }
+   }
+  }
+ }
+}
+GenericEntity KOTH_FirstSpawn : "{0D777787DAAD3541}Prefabs/Structures/KOTH/Camp_Blufor.et" {
+ coords 9398.412 68.614 4848.74
+ angleY 180
+}
+GenericEntity KOTH_ThirdSpawn : "{108B69D9D8DDE8B0}Prefabs/Structures/KOTH/Camp_Opfor.et" {
+ coords 8102.248 76.479 6084.796
+ angleY -71.163
+}
+$grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+ KOTH_SecondVehicleSpawn {
+  coords 7974.584 151.93 4128.254
+  angleX -6.168
+  angleY -0.677
+  angleZ 6.278
+  {
+   KOTH_SpawnPrefab KOTH_SecondVehicleSpawn_1 : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    coords -25.096 -0.854 -15.504
+    angleX 1.738
+    angleY -0.081
+    angleZ -2.66
+   }
+  }
+ }
+ KOTH_FirstVehicleSpawn {
+  coords 9417.778 68.058 4833.598
+  angleX 0.356
+  angleY -29.963
+  angleZ 5.973
+  {
+   KOTH_SpawnPrefab KOTH_FirstVehicleSpawn_1 : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    coords -30.782 -0.42 8.745
+    angleX -0.118
+    angleY 0.004
+    angleZ -1.983
+   }
+  }
+ }
+ KOTH_ThirdVehicleSpawn {
+  coords 8091.099 78.754 6055.158
+  angleX -5.716
+  {
+   KOTH_SpawnPrefab KOTH_ThirdVehicleSpawn_1 : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    coords -25.286 3.23 9.813
+    angleX 5.716
+   }
+  }
+ }
+}
+$grp GenericEntity : "{67EE7343073E3AF4}Prefabs/Systems/AmbientVehicles/AmbientVehicleSpawnpoint_US.et" {
+ KOTH_FirstFreeTruck {
+  coords 9408.6 67.827 4861.252
+  angleX 0.907
+  angleY -0.096
+  angleZ 7.123
+ }
+ KOTH_FirstFreeHelo {
+  coords 9383.099 69.759 4862.011
+  angleX 2.683
+  angleY 0.015
+  angleZ 3.573
+ }
+ KOTH_SecondFreeTruck {
+  coords 7972.214 148.603 4149.625
+  angleX -1.747
+  angleY 136.245
+  angleZ -6.965
+ }
+ KOTH_SecondFreeHelo {
+  coords 8000.794 148.768 4126.293
+  angleX -11.686
+  angleY 30.389
+  angleZ -2.738
+ }
+ KOTH_ThirdFreeHelo {
+  coords 8119.695 77.327 6081.803
+  angleX -9.731
+  angleY 0.461
+  angleZ -2.723
+ }
+ KOTH_ThirdFreeTruck {
+  coords 8064.846 75.715 6094.777
+  angleX -0.419
+  angleY 105.13
+  angleZ -11.991
+ }
+}
+GenericEntity KOTH_SecondSpawn : "{900D62CF65FB7496}Prefabs/Structures/KOTH/Camp_Indfor.et" {
+ coords 7984.628 149.824 4162.608
+ angleY -100.058
+}
+$grp GenericEntity : "{B956CCBC147690A4}Prefabs/MP/Triggers/KOTH_RepairZoneTrigger.et" {
+ {
+  coords 9265.045 65.874 4878.042
+  angleX 0.018
+  angleY -105.295
+  angleZ 2.362
+ }
+ {
+  coords 8129.874 133.419 4167.38
+  angleX 4.272
+  angleY -134.196
+  angleZ 10.668
+ }
+ {
+  coords 8139.857 80.646 6045.972
+  angleX -3.988
+  angleY -74.873
+  angleZ 2.959
+ }
+}

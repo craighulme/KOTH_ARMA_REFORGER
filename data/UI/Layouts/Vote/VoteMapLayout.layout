@@ -1,0 +1,59 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  OverlayWidgetClass "{610D2C5E304F8125}" {
+   Name "Overlay0"
+   Slot FrameWidgetSlot "{610D2C5E304F8103}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 0
+    OffsetRight 0
+    SizeY 0
+    OffsetBottom 0
+   }
+   {
+    BlurWidgetClass "{612CF780F6F8C21B}" : "{352322057FD78AE1}UI/layouts/WidgetLibrary/BaseElements/WLib_Blur.layout" {
+     Name "Blur0"
+     Slot OverlayWidgetSlot "{612CF780F6F8C233}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+    }
+    VerticalLayoutWidgetClass "{610D2C56413B585C}" {
+     Name "VerticalLayout0"
+     Slot OverlayWidgetSlot "{61114217D3126AAC}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+      Padding 0 50 0 0
+     }
+     {
+      HorizontalLayoutWidgetClass "{612CF7BBD30F299A}" {
+       Name "MapList1"
+       Slot LayoutSlot "{61114217D3126A9F}" {
+        VerticalAlign 0
+        Padding 85 0 0 25
+       }
+      }
+      HorizontalLayoutWidgetClass "{610D2C5CD04F22BF}" {
+       Name "MapList2"
+       Slot LayoutSlot "{61114217D3126A9F}" {
+        VerticalAlign 0
+        Padding 85 0 0 25
+       }
+      }
+      HorizontalLayoutWidgetClass "{61C8B56F8736108B}" {
+       Name "MapList3"
+       Slot LayoutSlot "{61114217D3126A9F}" {
+        VerticalAlign 0
+        Padding 85 0 0 0
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

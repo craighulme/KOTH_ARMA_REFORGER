@@ -1,0 +1,100 @@
+GenericEntity KOTH_FirstSpawn : "{0D777787DAAD3541}Prefabs/Structures/KOTH/Camp_Blufor.et" {
+ coords 3783.451 14.359 2463.859
+ angleY -28.836
+}
+GenericEntity KOTH_SecondSpawn : "{108B69D9D8DDE8B0}Prefabs/Structures/KOTH/Camp_Opfor.et" {
+ coords 1927.445 3.25 341.083
+ angleY 150
+}
+$grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+ KOTH_FirstVehicleSpawn {
+  coords 3761.764 12.132 2457.054
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    {
+     coords -20.356 -0.192 -17.127
+    }
+    {
+     coords -35.101 -0.643 11.133
+    }
+   }
+  }
+ }
+ KOTH_SecondVehicleSpawn {
+  coords 1942.596 2.91 362.045
+  angleY 135
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    {
+     coords -6.744 -0.819 -29.474
+    }
+    {
+     coords -11.261 -0.727 33.028
+    }
+   }
+  }
+ }
+ KOTH_ThirdVehicleSpawn {
+  coords 2540.682 3.125 1552.96
+  angleY 135
+  {
+   $grp KOTH_SpawnPrefab : "{1E394AEE2617B42D}Prefabs/MP/Spawning/KOTH_VehicleSpawnPoint.et" {
+    {
+     coords -9.295 0 -59.709
+    }
+    {
+     coords -16.41 0 -27.84
+    }
+   }
+  }
+ }
+}
+$grp GenericEntity : "{67EE7343073E3AF4}Prefabs/Systems/AmbientVehicles/AmbientVehicleSpawnpoint_US.et" {
+ KOTH_FirstFreeTruck {
+  coords 3798.923 14.759 2463.219
+  angleY -150
+ }
+ KOTH_FirstFreeHelo {
+  coords 3764.408 12.456 2491.539
+  angleY -150
+ }
+ KOTH_SecondFreeHelo {
+  coords 1960.157 2.512 328.615
+  angleY 180
+ }
+ KOTH_SecondFreeTruck {
+  coords 1938.98 2.382 324.473
+  angleY 180
+ }
+ KOTH_ThirdFreeHelo {
+  coords 2543.964 3.125 1520.36
+  angleY -180
+ }
+ KOTH_ThirdFreeTruck {
+  coords 2573.022 3.125 1569.041
+  angleY -180
+ }
+}
+GenericEntity KOTH_ThirdSpawn : "{900D62CF65FB7496}Prefabs/Structures/KOTH/Camp_Indfor.et" {
+ coords 2557.073 3.873 1573.469
+ angleY -45
+}
+$grp GenericEntity : "{B956CCBC147690A4}Prefabs/MP/Triggers/KOTH_RepairZoneTrigger.et" {
+ {
+  coords 3696.454 12.642 2424.687
+  angleY -105
+  angleZ 2.289
+ }
+ {
+  coords 2035.658 1.752 211.255
+  angleX -0.082
+  angleY -40.378
+  angleZ 0.981
+ }
+ {
+  coords 2603.01 3.611 1547.601
+  angleX 0.291
+  angleY 124.718
+  angleZ -0.46
+ }
+}

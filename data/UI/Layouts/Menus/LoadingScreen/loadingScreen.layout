@@ -1,0 +1,65 @@
+FrameWidgetClass {
+ {
+  FrameWidgetClass "{552A7A04A191E7CF}" {
+   Prefab "{552A7A04A191E7CF}"
+   {
+    OverlayWidgetClass "{58D0CBF2E62A3B89}" {
+     Prefab "{58D0CBF2E62A3B89}"
+     {
+      SizeLayoutWidgetClass "{58D0CBF3CAE7C8EF}" {
+       Prefab "{58D0CBF3CAE7C8EF}"
+       {
+        VerticalLayoutWidgetClass "{58D0CBF3CFE26D18}" {
+         Prefab "{58D0CBF3CFE26D18}"
+         {
+          HorizontalLayoutWidgetClass "{552A9210842CE1EE}" {
+           Prefab "{552A9210842CE1EE}"
+           {
+            FrameWidgetClass "{552A7A0469FC23C6}" {
+             Prefab "{552A7A0469FC23C6}"
+             {
+              ScaleWidgetClass "{552A7A06FF8F366B}" {
+               Prefab "{552A7A06FF8F366B}"
+               {
+                ImageWidgetClass "{552A7A05A56EFACD}" {
+                 Prefab "{552A7A05A56EFACD}"
+                 Color 0.896 0.896 0.896 1
+                 Texture "{3BD92DD99C3E1890}Art/FRM_Fond.edds"
+                }
+               }
+              }
+             }
+            }
+            VerticalLayoutWidgetClass "{552A7A0D597D264E}" {
+             Prefab "{552A7A0D597D264E}"
+             {
+              TextWidgetClass "{58EEB32453337BD4}" {
+               Prefab "{58EEB32453337BD4}"
+               Text "KING OF THE HILL REFORGED"
+              }
+              TextWidgetClass "{552D08C8C5E2D2B0}" {
+               Prefab "{552D08C8C5E2D2B0}"
+               Text "by French Reforger Mods"
+              }
+              RichTextWidgetClass "{56908743C9509EA4}" {
+               Prefab "{56908743C9509EA4}"
+               Text "The game mod is inspired by the original mod created by Sa-Matra, "\
+               "3 teams (Blufor, Opfor, Indfor) "\
+               "battle it out in a predefined zone with 4 towers, "\
+               "the aim being to stay in the zone as long as possible and score a total of 100 points. "\
+               "if the number of players in the zone per team is equal, then no points are awarded until a team reaches majority in the zone. "
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,88 @@
+VerticalLayoutWidgetClass {
+ Name "VerticalLayout0"
+ Slot OverlayWidgetSlot "{5E36F1CDA3AE3DA6}" {
+  HorizontalAlign 2
+  Padding 0 0 50 0
+ }
+ "Z Order" 2
+ {
+  OverlayWidgetClass "{6234D928D2A6D78D}" {
+   Name "Overlay"
+   Slot LayoutSlot "{5D9E7C92E8117E0B}" {
+    SizeMode Fill
+   }
+   {
+    HorizontalLayoutWidgetClass "{6234D928D2A6D78A}" : "{74686613FDE00759}UI/Layouts/HUD/KOTH_Notification.layout" {
+     Name "KOTH_NotifEndGame"
+     Slot OverlayWidgetSlot "{5C9E2A9FC993FEE7}" {
+      Padding 0 0 0 100
+     }
+     {
+      OverlayWidgetClass "{5E2539EE77BDD63C}" {
+       Prefab "{5E2539EE77BDD63C}"
+       {
+        HorizontalLayoutWidgetClass "{5E2539EE77BDD63D}" {
+         Prefab "{5E2539EE77BDD63D}"
+         {
+          VerticalLayoutWidgetClass "{5E2539EE77BDD63B}" {
+           Prefab "{5E2539EE77BDD63B}"
+           {
+            HorizontalLayoutWidgetClass "{5E2539EE77BDD638}" {
+             Prefab "{5E2539EE77BDD638}"
+             {
+              OverlayWidgetClass "{5E2539EE77BDD636}" {
+               Prefab "{5E2539EE77BDD636}"
+               {
+                HorizontalLayoutWidgetClass "{5E2539EE77BDD637}" {
+                 Prefab "{5E2539EE77BDD637}"
+                 {
+                  TextWidgetClass "{5E2539EE77BDD635}" {
+                   Prefab "{5E2539EE77BDD635}"
+                   Text "Bonus end game"
+                  }
+                 }
+                }
+               }
+              }
+              OverlayWidgetClass "{5E2539EE77BDD632}" {
+               Prefab "{5E2539EE77BDD632}"
+               {
+                HorizontalLayoutWidgetClass "{5E2539EE77BDD630}" {
+                 Prefab "{5E2539EE77BDD630}"
+                 {
+                  TextWidgetClass "{5E2539EE77BDD631}" {
+                   Prefab "{5E2539EE77BDD631}"
+                   Text "123456 xp "
+                  }
+                 }
+                }
+               }
+              }
+              OverlayWidgetClass "{5E2539EE77BDD60F}" {
+               Prefab "{5E2539EE77BDD60F}"
+               {
+                HorizontalLayoutWidgetClass "{5E2539EE77BDD60D}" {
+                 Prefab "{5E2539EE77BDD60D}"
+                 {
+                  TextWidgetClass "{5E2539EE77BDD60A}" {
+                   Prefab "{5E2539EE77BDD60A}"
+                   Text "123456 $"
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

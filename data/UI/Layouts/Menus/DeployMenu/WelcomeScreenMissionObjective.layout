@@ -1,0 +1,24 @@
+HorizontalLayoutWidgetClass {
+ {
+  SizeLayoutWidgetClass "{5CE0794E739FE3D0}" {
+   Prefab "{5CE0794E739FE3D0}"
+   {
+    HorizontalLayoutWidgetClass "{5CE0794E739FE3D1}" {
+     Prefab "{5CE0794E739FE3D1}"
+     {
+      SizeLayoutWidgetClass "{5CE0794E739FE3D6}" {
+       Prefab "{5CE0794E739FE3D6}"
+       {
+        ImageWidgetClass "{5926B3017FB7EB8C}" {
+         Prefab "{5926B3017FB7EB8C}"
+         Color 1 0.507 0.1 1
+         Image ""
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,59 @@
+$grp Tree : "{4ACFFC74FDAFAEB1}Prefabs/Models/Trees/tem_palm2.et" {
+ {
+  coords 2154.03 0 1612.248
+  angleY 0
+  scale 0.862
+ }
+ {
+  coords 2115.61 0 1673.114
+  angleY 0
+  scale 0.862
+ }
+ {
+  coords 2084.928 0 1803.451
+  angleY 0
+  scale 0.862
+ }
+ {
+  coords 2153.954 0 1765.086
+  angleY 0
+  scale 0.862
+ }
+ {
+  coords 2055.404 0 1696.489
+  angleY 0
+  scale 0.862
+ }
+ {
+  coords 2331.626 0 1349.276
+  angleY 0
+  scale 0.862
+ }
+}
+$grp Tree : "{AF53B08DF14A39DA}Prefabs/Models/Trees/tem_palm3.et" {
+ {
+  coords 1995.029 0 1607.518
+  angleY 0
+  scale 0.99
+ }
+ {
+  coords 1990.314 0 1631.459
+  angleY 0
+  scale 0.99
+ }
+ {
+  coords 2065.746 0 1827.556
+  angleY 0
+  scale 0.99
+ }
+ {
+  coords 2081.673 0 1815.944
+  angleY 0
+  scale 0.99
+ }
+ {
+  coords 2131.555 0 1805.516
+  angleY 0
+  scale 0.99
+ }
+}

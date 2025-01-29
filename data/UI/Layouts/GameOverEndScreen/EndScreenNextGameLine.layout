@@ -1,0 +1,28 @@
+OverlayWidgetClass {
+ Name "VerticalLayout0"
+ Slot OverlayWidgetSlot "{5E36F1CDA3AE3DA6}" {
+  HorizontalAlign 3
+  VerticalAlign 3
+  Padding 0 0 0 300
+ }
+ "Z Order" 2
+ {
+  TextWidgetClass "{5F1B2D5BC61ADE2F}" {
+   Name "GameOver_Restard"
+   Slot OverlayWidgetSlot "{5F1B2D5AFD3D7EA8}" {
+    VerticalAlign 2
+   }
+   Color 0.761 0.392 0.078 1
+   Text "NEXT GAME IS LOADING"
+   "Font Size" 30
+   "Min Font Size" 30
+   "Horizontal Alignment" Center
+   "Vertical Alignment" Center
+   FontProperties FontProperties "{5E1F5235C1832659}" {
+    ShadowSize 32
+    ShadowOffset 3 3
+    ShadowOpacity 0.5
+   }
+  }
+ }
+}

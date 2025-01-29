@@ -1,0 +1,11 @@
+KOTH_PresenceTriggerEntity : "{F9467A5734030343}Prefabs/MP/Triggers/KOTH_zoneTrigger.et" {
+ coords 2518.875 148.194 2267.748
+ angleX 0
+ angleZ 0
+ {
+  KOTH_PriorityAreaPresenceTriggerEntity {
+   ID "60B4DB5F4B905473"
+   DrawShape 0
+  }
+ }
+}

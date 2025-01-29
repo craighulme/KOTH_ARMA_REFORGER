@@ -1,0 +1,33 @@
+GenericEntity : "{0D777787DAAD3541}Prefabs/Structures/KOTH/Camp_Blufor.et" {
+ coords 2648.197 81.923 1826.087
+}
+GenericEntity : "{108B69D9D8DDE8B0}Prefabs/Structures/KOTH/Camp_Opfor.et" {
+ coords 2621.831 100.386 2653.281
+ angleY -40.286
+}
+SCR_SpawnPoint : "{269CABAD2E71A94D}Prefabs/MP/Spawning/BLUFOR_Spawnpoint_KOTH.et" {
+ coords 2470.219 141.829 2200.002
+ angleY 57.09
+}
+GenericEntity : "{900D62CF65FB7496}Prefabs/Structures/KOTH/Camp_Indfor.et" {
+ coords 2052.888 61.97 2147.061
+ angleY -45
+}
+SCR_SpawnPoint : "{9AA087563AE90A88}Prefabs/MP/Spawning/INDFOR_Spawnpoint_KOTH.et" {
+ components {
+  SCR_SpawnPointRespawnRequestComponent "{5E1F106EB0C6A064}" {
+  }
+ }
+ coords 2471.669 141.334 2197.115
+ angleX 14.161
+ angleY 53.002
+ angleZ -19.548
+}
+SCR_SpawnPoint : "{F607201D6D19DAA3}Prefabs/MP/Spawning/OPFOR_Spawnpoint_KOTH.et" {
+ components {
+  SCR_SpawnPointRespawnRequestComponent "{5E1F106EB2B515DD}" {
+  }
+ }
+ coords 2474.28 140.072 2194.41
+ angleY 55.146
+}
