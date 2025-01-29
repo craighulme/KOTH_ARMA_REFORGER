@@ -410,7 +410,7 @@ class KOTH_PlayerEventsGameModeComponent : SCR_BaseGameModeComponent
 	void HandlePilotDropBonus(int pilotId, string occupantUID)
 	{
 		string pilotUID = KOTH_Helper.GetPlayerUID(pilotId);
-		LogWorkbench("Pilot ID: " + pilotId + ", Pilot UID: " + pilotUID);m_assistSystem
+		LogWorkbench("Pilot ID: " + pilotId + ", Pilot UID: " + pilotUID);
 
 		if (pilotUID == occupantUID || pilotUID.IsEmpty())
 			return;
