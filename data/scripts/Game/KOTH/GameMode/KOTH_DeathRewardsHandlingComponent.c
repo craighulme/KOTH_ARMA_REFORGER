@@ -7,6 +7,7 @@ class KOTH_DeathRewardsHandlingComponent : SCR_BaseGameModeComponent
 	protected SCR_BaseScoringSystemComponent scoringComp;
 	protected RplComponent m_ReplicationComponent;
 	protected PlayerManager m_playerManager;
+	protected KOTH_AssistSystemComponent m_assistSystem;
 	
 	override void OnPostInit(IEntity owner)
 	{
@@ -19,6 +20,7 @@ class KOTH_DeathRewardsHandlingComponent : SCR_BaseGameModeComponent
 		m_ReplicationComponent = RplComponent.Cast(owner.FindComponent(RplComponent));
 		m_playerManager = GetGame().GetPlayerManager();
 		scoringComp = SCR_BaseScoringSystemComponent.Cast(GetGame().GetGameMode().FindComponent(SCR_BaseScoringSystemComponent));
+		m_assistSystem = KOTH_AssistSystemComponent.Cast(GetGame().GetGameMode().FindComponent(KOTH_AssistSystemComponent));
 	}
 
 	// Method to reward killer XP and money on a non-vehicle target
@@ -33,10 +35,22 @@ class KOTH_DeathRewardsHandlingComponent : SCR_BaseGameModeComponent
 		Log("RewardKiller - Rewarding Player for killing a player (not in a vehicle).  PlayerName = " +  m_playerManager.GetPlayerName(deathEvent.playerId) + ", KillerName = " +  m_playerManager.GetPlayerName(deathEvent.killerId));
 		
 		//handle the kill first
-		int bonus = expManager.GetKillBonus(deathEvent.killerUID);
-		ApplyRewardXpKillandMoney(deathEvent, bonus);
-		deathEvent.killerProfileComp.DoRpc_Notif_EnemyKill(bonus.ToString());
+		int bonusKiller = expManager.GetKillBonus(deathEvent.killerUID);
+		ApplyRewardXpKillandMoney(deathEvent, bonusKiller);
+		deathEvent.killerProfileComp.DoRpc_Notif_EnemyKill(bonusKiller.ToString());
 		deathEvent.killerProfileComp.AddToKillStreak();
+		
+		// reward any assistants who helped the killer
+		array<string> assistants = m_assistSystem.GetAssistants(deathEvent.killerUID);
+		foreach (string assistantUID : assistants)
+		{
+			int bonusAssister = expManager.GetKillBonus(assistantUID);
+			m_assistSystem.RewardAssistant(assistantUID, bonusAssister, bonusAssister, 
+				func ref void(KOTH_SCR_PlayerProfileComponent profileComp) {
+					profileComp.DoRpc_Notif_EnemyKill(bonusKiller.ToString());
+				}
+			);
+		}
 
 		//vehicle weapon specific add kill 
 		if(deathEvent.vehicleWeaponDeath)
@@ -53,10 +67,32 @@ class KOTH_DeathRewardsHandlingComponent : SCR_BaseGameModeComponent
 		int killStreakBonus = FindKillStreakBonus(deathEvent);
 		int killDistanceBonus = FindKillDistanceBonus(deathEvent);
 
-		if (killDistanceBonus != 0)
+		if (killDistanceBonus != 0) {
 			ApplyKillDistanceReward(deathEvent, killDistanceBonus);
-		if (killStreakBonus != 0)
+
+			foreach (string assistantUID : assistants)
+			{
+				m_assistSystem.RewardAssistant(assistantUID, killDistanceBonus, killDistanceBonus, 
+					func ref void(KOTH_SCR_PlayerProfileComponent profileComp) {
+						profileComp.DoRpc_Notif_KillDistance(killDistanceBonus, killDistanceBonus);
+					}
+				);
+			}
+		}
+		if (killStreakBonus != 0) {
 			ApplyKillStreakReward(deathEvent, killStreakBonus);
+
+			foreach (string assistantUID : assistants)
+			{
+				m_assistSystem.RewardAssistant(assistantUID, killStreakBonus, killStreakBonus, 
+					func ref void(KOTH_SCR_PlayerProfileComponent profileComp) {
+						profileComp.DoRpc_Notif_KillStreak(deathEvent.killerProfileComp.GetKillStreak(), bonus);
+					}
+				);
+			}
+		}
+
+
 
 		deathEvent.killerProfileComp.DoRpc_SyncPlayerProfile(deathEvent.killerProfileJson);
 	}

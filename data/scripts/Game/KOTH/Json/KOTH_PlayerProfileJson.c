@@ -39,6 +39,7 @@ class KOTH_PlayerProfileJson : JsonApiStruct
 		RegV("m_kills");
 		RegV("m_deaths");
 		RegV("m_friendlyKills");
+		RegV("m_assists");
 
 		RegV("m_unlockedItems");
 		RegV("m_playerPresets");
@@ -46,6 +47,7 @@ class KOTH_PlayerProfileJson : JsonApiStruct
 
 	void AddDeath() { m_deaths++; }
 	void AddKill() { m_kills++; }
+	void AddAssist() { m_assists++; }
 	
 	void AddEndGameBonusXpAndMoney(int bonus)
 	{

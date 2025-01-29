@@ -13,6 +13,7 @@ class KOTH_AssistSystemComponent : SCR_BaseGameModeComponent
     
     protected PlayerManager m_playerManager;
     protected KOTH_BackendApiGameModeComponent m_kothBackendApi;
+	protected KOTH_SessionDataGameModeComponent m_sessionDataGameComp;
     
     override void OnPostInit(IEntity owner)
     {
@@ -24,6 +25,7 @@ class KOTH_AssistSystemComponent : SCR_BaseGameModeComponent
         
         m_playerManager = GetGame().GetPlayerManager();
         m_kothBackendApi = KOTH_BackendApiGameModeComponent.Cast(GetGame().GetGameMode().FindComponent(KOTH_BackendApiGameModeComponent));
+        m_sessionDataGameComp = KOTH_SessionDataGameModeComponent.Cast(GetGame().GetGameMode().FindComponent(KOTH_SessionDataGameModeComponent));
         
         // Start periodic cleanup of expired assists
         GetGame().GetCallqueue().CallLater(CleanupExpiredAssists, 10000, true);
@@ -75,7 +77,7 @@ class KOTH_AssistSystemComponent : SCR_BaseGameModeComponent
         }
     }
     
-    // Award XP/Money to all assisting players
+    // award xp/money to all assisting players (unused.) GetAssistants is better for bonus applications.
     void HandleAssistRewards(string assistedUID, int xpAmount, int moneyAmount)
     {
         if (!m_assistRelationships.Contains(assistedUID))
@@ -114,9 +116,44 @@ class KOTH_AssistSystemComponent : SCR_BaseGameModeComponent
             }
         }
     }
-    
+
+    void RewardAssistant(string assistantUID, int xpAmount, int moneyAmount, func ref<void(KOTH_SCR_PlayerProfileComponent)> doRpcFunc)
+    {
+        if (!m_kothBackendApi || !m_kothBackendApi.m_CurrentProfileList.Contains(assistantUID))
+            return;
+
+        KOTH_PlayerProfileJson profile = m_kothBackendApi.m_CurrentProfileList.Get(assistantUID);
+        if (!profile)
+            return;
+
+        // Apply rewards
+        profile.AddXp(xpAmount);
+        profile.AddMoney(moneyAmount);
+        profile.AddAssist();
+
+        // Sync updated profile
+        m_kothBackendApi.DoRpcSyncProfileToPlayer(profile);
+
+        // Update session data
+        m_sessionDataGameComp.AddSessionXpAndMoney(xpAmount, moneyAmount, assistantUID);
+
+        // Get assistant's player controller
+        int playerId = KOTH_Helper.GetPlayerID(assistantUID);
+        PlayerController playerController = m_playerManager.GetPlayerController(playerId);
+        if (!playerController)
+            return;
+
+        KOTH_SCR_PlayerProfileComponent profileComp = KOTH_SCR_PlayerProfileComponent.Cast(playerController.FindComponent(KOTH_SCR_PlayerProfileComponent));
+        if (!profileComp)
+            return;
+
+        // Invoke the provided RPC function dynamically
+        if (doRpcFunc)
+            doRpcFunc.Invoke(profileComp);
+    }
+
     // Cleanup expired assist relationships
-    protected void CleanupExpiredAssists()
+    void CleanupExpiredAssists()
     {
         float currentTime = GetGame().GetWorld().GetWorldTime();
         
@@ -141,7 +178,41 @@ class KOTH_AssistSystemComponent : SCR_BaseGameModeComponent
             }
         }
     }
-    
+
+    // returns a list of players who assisted the given player
+    array<string> GetAssistants(string playerUID)
+    {
+        if (!m_assistRelationships.Contains(playerUID))
+            return new array<string>(); // empty array
+
+        return m_assistRelationships.Get(playerUID);
+    }
+
+    void ClearAllAssists(string playerUID)
+    {
+        if (m_assistRelationships.Contains(playerUID))
+        {
+            m_assistRelationships.Remove(playerUID);
+        }
+
+        // Remove all expiry times related to this player
+        array<string> expiredKeys = {};
+        foreach (string key, float expiryTime : m_assistExpiryTimes)
+        {
+            if (key.Contains(playerUID))
+            {
+                expiredKeys.Insert(key);
+            }
+        }
+
+        foreach (string key : expiredKeys)
+        {
+            m_assistExpiryTimes.Remove(key);
+        }
+
+        LogWorkbench(string.Format("Cleared all assists for player %1", playerUID));
+    }
+
     // Helper method to create a unique key for storing expiry times
     protected string GetRelationshipKey(string assistedUID, string assistantUID)
     {

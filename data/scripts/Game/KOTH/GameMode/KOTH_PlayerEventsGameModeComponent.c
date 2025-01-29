@@ -7,6 +7,7 @@ class KOTH_PlayerEventsGameModeComponent : SCR_BaseGameModeComponent
 	protected KOTH_ExperienceManager m_expManager;
 	protected PlayerManager m_playerManager;
 	protected KOTH_VehicleEventsGameModeComponent m_vehEventGameComp;
+	protected KOTH_AssistSystemComponent m_assistSystem;
 	
 	//grabbed this from SCR_GetOutAction
 	const float MAX_GETOUT_SPEED_METER_PER_SEC_SQ = 17.36138889;
@@ -24,6 +25,7 @@ class KOTH_PlayerEventsGameModeComponent : SCR_BaseGameModeComponent
 		m_sessionDataGameComp = KOTH_SessionDataGameModeComponent.Cast(gameMode.FindComponent(KOTH_SessionDataGameModeComponent));
 		m_kothBackendApi = KOTH_BackendApiGameModeComponent.Cast(gameMode.FindComponent(KOTH_BackendApiGameModeComponent));
 		m_vehEventGameComp = KOTH_VehicleEventsGameModeComponent.Cast(gameMode.FindComponent(KOTH_VehicleEventsGameModeComponent));
+		m_assistSystem = KOTH_AssistSystemComponent.Cast(GetGame().GetGameMode().FindComponent(KOTH_AssistSystemComponent));
 	}
 
 	override void OnPlayerConnected(int playerId)
@@ -116,6 +118,8 @@ class KOTH_PlayerEventsGameModeComponent : SCR_BaseGameModeComponent
 		PlayerController playerController = requestComponent.GetPlayerController();
 		KOTH_SCR_PlayerShopComponent playerShopComp = KOTH_SCR_PlayerShopComponent.Cast(playerController.FindComponent(KOTH_SCR_PlayerShopComponent));
 		string playerUID = KOTH_Helper.GetPlayerUID(requestComponent.GetPlayerId());
+
+		m_assistSystem.ClearAllAssists(playerUID);
 
 		KOTH_SCR_PlayerProfileComponent playerProfileComp = KOTH_SCR_PlayerProfileComponent.Cast(playerController.FindComponent(KOTH_SCR_PlayerProfileComponent));
 		playerProfileComp.lastRespawnTime = GetGame().GetWorld().GetWorldTime();
