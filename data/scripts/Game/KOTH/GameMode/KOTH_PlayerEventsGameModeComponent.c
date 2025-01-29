@@ -410,7 +410,7 @@ class KOTH_PlayerEventsGameModeComponent : SCR_BaseGameModeComponent
 	void HandlePilotDropBonus(int pilotId, string occupantUID)
 	{
 		string pilotUID = KOTH_Helper.GetPlayerUID(pilotId);
-		LogWorkbench("Pilot ID: " + pilotId + ", Pilot UID: " + pilotUID);
+		LogWorkbench("Pilot ID: " + pilotId + ", Pilot UID: " + pilotUID);m_assistSystem
 
 		if (pilotUID == occupantUID || pilotUID.IsEmpty())
 			return;
@@ -430,6 +430,7 @@ class KOTH_PlayerEventsGameModeComponent : SCR_BaseGameModeComponent
 		profile.AddXp(bonus);
 		profile.AddMoney(bonus);
 
+		m_assistSystem.AddAssistRelationship(occupantUID, pilotUID);
 		m_sessionDataGameComp.AddSessionXpAndMoney(bonus, bonus, pilotUID);
 		m_kothBackendApi.DoRpcSyncProfileToPlayer(profile);
 

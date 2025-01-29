@@ -30,7 +30,7 @@ class KOTH_SCR_ReviveAction : ScriptedUserAction
 			if (hitZone.GetHealth() < threeQuarterHealth)
 				hitZone.SetHealth(threeQuarterHealth);
 		}
-		
+
 		CharacterControllerComponent controllerComp = chimera.GetCharacterController();
 		if (controllerComp)
 			controllerComp.SetUnconscious(false);
@@ -53,18 +53,31 @@ class KOTH_SCR_ReviveAction : ScriptedUserAction
 		sessionDataGameComp.AddSessionXpAndMoney(bonus, bonus, playerUID);
 		playerProfileComp.DoRpc_SyncPlayerProfile(profile);
 		playerProfileComp.DoRpc_NotifReviveFriendly(bonus.ToString());
-		
+
+		// get assist system for the revive action
+		KOTH_AssistSystemComponent assistSystem = KOTH_AssistSystemComponent.Cast(GetGame().GetGameMode().FindComponent(KOTH_AssistSystemComponent));
+		if (assistSystem)
+		{
+			// Now handle assist relationship for reviver
+			string revivedUID = KOTH_Helper.GetPlayerUID(m_playerMng.GetPlayerIdFromControlledEntity(pOwnerEntity));
+			if (revivedUID != playerUID) // Don't link assist if the reviver is the same as the revived player
+			{
+				assistSystem.AddAssistRelationship(revivedUID, playerUID);
+			}
+		}
+
 		// remove a bandage from healer (from the end of the array)
-	    array<IEntity> bandages = GetBandages(pUserEntity);
-	    if (!bandages.IsEmpty())
-	    {
-	        IEntity lastBandage = bandages[bandages.Count() - 1];
-	        if (lastBandage)
-	            RplComponent.DeleteRplEntity(lastBandage, false);
-	    }
+		array<IEntity> bandages = GetBandages(pUserEntity);
+		if (!bandages.IsEmpty())
+		{
+			IEntity lastBandage = bandages[bandages.Count() - 1];
+			if (lastBandage)
+				RplComponent.DeleteRplEntity(lastBandage, false);
+		}
 
 		Log("Player "+m_playerMng.GetPlayerName(playerId)+" revived player "+m_playerMng.GetPlayerName(m_playerMng.GetPlayerIdFromControlledEntity(pOwnerEntity)));
 	}
+
 
 	override bool CanBePerformedScript(IEntity user) 
 	{
