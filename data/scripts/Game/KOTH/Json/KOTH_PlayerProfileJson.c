@@ -16,6 +16,7 @@ class KOTH_PlayerProfileJson : JsonApiStruct
 
 	int m_kills = 0;
 	int m_deaths = 0;
+	int m_assists = 0;
 	int m_friendlyKills = 0;
 	
 	ref array<string> m_unlockedItems = {};

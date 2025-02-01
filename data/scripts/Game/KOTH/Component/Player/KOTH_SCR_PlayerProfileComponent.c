@@ -79,6 +79,7 @@ class KOTH_SCR_PlayerProfileComponent : ScriptComponent
 	
 	int m_kills = 0;
 	int m_deaths = 0;
+	int m_assists = 0;
 	int m_friendlyKills = 0;
 	
 	protected int m_xp = 0;

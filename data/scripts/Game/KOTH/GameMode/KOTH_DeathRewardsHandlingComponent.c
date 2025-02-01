@@ -27,10 +27,10 @@ class KOTH_DeathRewardsHandlingComponent : SCR_BaseGameModeComponent
 	void RewardKiller(KOTH_DeathEvent deathEvent)
 	{
 		// Check if this instance is authoritative
-        if (!m_ReplicationComponent.IsMaster())
-        {
-            return;
-        }
+		if (!m_ReplicationComponent.IsMaster())
+		{
+			return;
+		}
 		
 		Log("RewardKiller - Rewarding Player for killing a player (not in a vehicle).  PlayerName = " +  m_playerManager.GetPlayerName(deathEvent.playerId) + ", KillerName = " +  m_playerManager.GetPlayerName(deathEvent.killerId));
 		
@@ -41,15 +41,23 @@ class KOTH_DeathRewardsHandlingComponent : SCR_BaseGameModeComponent
 		deathEvent.killerProfileComp.AddToKillStreak();
 		
 		// reward any assistants who helped the killer
-		array<string> assistants = m_assistSystem.GetAssistants(deathEvent.killerUID);
-		foreach (string assistantUID : assistants)
+		array<int> assistants = m_assistSystem.GetAssistants(deathEvent.killerId);
+		foreach (int assistantID : assistants)
 		{
+			string assistantUID = KOTH_Helper.GetPlayerUID(assistantID);
 			int bonusAssister = expManager.GetKillBonus(assistantUID);
-			m_assistSystem.RewardAssistant(assistantUID, bonusAssister, bonusAssister, 
-				func ref void(KOTH_SCR_PlayerProfileComponent profileComp) {
-					profileComp.DoRpc_Notif_EnemyKill(bonusKiller.ToString());
+			m_assistSystem.RewardAssistant(assistantID, bonusAssister, bonusAssister);
+			
+			PlayerController assistantController = m_playerManager.GetPlayerController(assistantID);
+			if (assistantController)
+			{
+				KOTH_SCR_PlayerProfileComponent assistantProfile = KOTH_SCR_PlayerProfileComponent.Cast(
+					assistantController.FindComponent(KOTH_SCR_PlayerProfileComponent));
+				if (assistantProfile)
+				{
+					assistantProfile.DoRpc_Notif_EnemyKill(bonusAssister.ToString());
 				}
-			);
+			}
 		}
 
 		//vehicle weapon specific add kill 
@@ -70,32 +78,48 @@ class KOTH_DeathRewardsHandlingComponent : SCR_BaseGameModeComponent
 		if (killDistanceBonus != 0) {
 			ApplyKillDistanceReward(deathEvent, killDistanceBonus);
 
-			foreach (string assistantUID : assistants)
+			foreach (int assistantID : assistants)
 			{
-				m_assistSystem.RewardAssistant(assistantUID, killDistanceBonus, killDistanceBonus, 
-					func ref void(KOTH_SCR_PlayerProfileComponent profileComp) {
-						profileComp.DoRpc_Notif_KillDistance(killDistanceBonus, killDistanceBonus);
+				string assistantUID = KOTH_Helper.GetPlayerUID(assistantID);
+				m_assistSystem.RewardAssistant(assistantID, killDistanceBonus, killDistanceBonus);
+				
+				PlayerController assistantController = m_playerManager.GetPlayerController(assistantID);
+				if (assistantController)
+				{
+					KOTH_SCR_PlayerProfileComponent assistantProfile = KOTH_SCR_PlayerProfileComponent.Cast(
+						assistantController.FindComponent(KOTH_SCR_PlayerProfileComponent));
+					if (assistantProfile)
+					{
+						assistantProfile.DoRpc_Notif_KillDistance(killDistanceBonus, killDistanceBonus);
 					}
-				);
+				}
 			}
 		}
 		if (killStreakBonus != 0) {
 			ApplyKillStreakReward(deathEvent, killStreakBonus);
 
-			foreach (string assistantUID : assistants)
+			foreach (int assistantID : assistants)
 			{
-				m_assistSystem.RewardAssistant(assistantUID, killStreakBonus, killStreakBonus, 
-					func ref void(KOTH_SCR_PlayerProfileComponent profileComp) {
-						profileComp.DoRpc_Notif_KillStreak(deathEvent.killerProfileComp.GetKillStreak(), bonus);
+				string assistantUID = KOTH_Helper.GetPlayerUID(assistantID);
+				m_assistSystem.RewardAssistant(assistantID, killStreakBonus, killStreakBonus);
+				
+				PlayerController assistantController = m_playerManager.GetPlayerController(assistantID);
+				if (assistantController)
+				{
+					KOTH_SCR_PlayerProfileComponent assistantProfile = KOTH_SCR_PlayerProfileComponent.Cast(
+						assistantController.FindComponent(KOTH_SCR_PlayerProfileComponent));
+					if (assistantProfile)
+					{
+						assistantProfile.DoRpc_Notif_KillStreak(deathEvent.killerProfileComp.GetKillStreak(), killStreakBonus);
 					}
-				);
+				}
 			}
 		}
 
-
-
 		deathEvent.killerProfileComp.DoRpc_SyncPlayerProfile(deathEvent.killerProfileJson);
 	}
+
+
 
 	void ApplyRewardXpKillandMoney(KOTH_DeathEvent deathEvent, int bonus)
 	{

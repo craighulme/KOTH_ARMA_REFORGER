@@ -56,13 +56,12 @@ class KOTH_SCR_ReviveAction : ScriptedUserAction
 
 		// get assist system for the revive action
 		KOTH_AssistSystemComponent assistSystem = KOTH_AssistSystemComponent.Cast(GetGame().GetGameMode().FindComponent(KOTH_AssistSystemComponent));
+		int revivedId = m_playerMng.GetPlayerIdFromControlledEntity(pOwnerEntity);
 		if (assistSystem)
 		{
-			// Now handle assist relationship for reviver
-			string revivedUID = KOTH_Helper.GetPlayerUID(m_playerMng.GetPlayerIdFromControlledEntity(pOwnerEntity));
-			if (revivedUID != playerUID) // Don't link assist if the reviver is the same as the revived player
+			if (revivedId != playerId) // don't link assist if the reviver is the same as the revived player
 			{
-				assistSystem.AddAssistRelationship(revivedUID, playerUID);
+				assistSystem.AddAssistRelationship(revivedId, playerId);
 			}
 		}
 
@@ -75,7 +74,7 @@ class KOTH_SCR_ReviveAction : ScriptedUserAction
 				RplComponent.DeleteRplEntity(lastBandage, false);
 		}
 
-		Log("Player "+m_playerMng.GetPlayerName(playerId)+" revived player "+m_playerMng.GetPlayerName(m_playerMng.GetPlayerIdFromControlledEntity(pOwnerEntity)));
+		Log("Player "+m_playerMng.GetPlayerName(playerId)+" revived player "+m_playerMng.GetPlayerName(revivedId));
 	}
 
 

@@ -119,7 +119,7 @@ class KOTH_PlayerEventsGameModeComponent : SCR_BaseGameModeComponent
 		KOTH_SCR_PlayerShopComponent playerShopComp = KOTH_SCR_PlayerShopComponent.Cast(playerController.FindComponent(KOTH_SCR_PlayerShopComponent));
 		string playerUID = KOTH_Helper.GetPlayerUID(requestComponent.GetPlayerId());
 
-		m_assistSystem.ClearAllAssists(playerUID);
+		m_assistSystem.ClearAllAssists(requestComponent.GetPlayerId());
 
 		KOTH_SCR_PlayerProfileComponent playerProfileComp = KOTH_SCR_PlayerProfileComponent.Cast(playerController.FindComponent(KOTH_SCR_PlayerProfileComponent));
 		playerProfileComp.lastRespawnTime = GetGame().GetWorld().GetWorldTime();
@@ -391,7 +391,6 @@ class KOTH_PlayerEventsGameModeComponent : SCR_BaseGameModeComponent
 
 	void HandleOccupantDropNearZone(int occupantID, int pilotId)
 	{
-		string occupantUID = KOTH_Helper.GetPlayerUID(occupantID);
 		PlayerController occupantPlayerController = m_playerManager.GetPlayerController(occupantID);
 		if (!occupantPlayerController)
 			return;
@@ -404,12 +403,14 @@ class KOTH_PlayerEventsGameModeComponent : SCR_BaseGameModeComponent
 
 		Log("Occupant marked as dropped near zone. Points to be awarded to " + m_playerManager.GetPlayerName(pilotId));
 
-		HandlePilotDropBonus(pilotId, occupantUID);
+		HandlePilotDropBonus(pilotId, occupantID);
 	}
 
-	void HandlePilotDropBonus(int pilotId, string occupantUID)
+	void HandlePilotDropBonus(int pilotId, int occupantId)
 	{
 		string pilotUID = KOTH_Helper.GetPlayerUID(pilotId);
+		string occupantUID = KOTH_Helper.GetPlayerUID(occupantId);
+		
 		LogWorkbench("Pilot ID: " + pilotId + ", Pilot UID: " + pilotUID);
 
 		if (pilotUID == occupantUID || pilotUID.IsEmpty())
@@ -430,7 +431,7 @@ class KOTH_PlayerEventsGameModeComponent : SCR_BaseGameModeComponent
 		profile.AddXp(bonus);
 		profile.AddMoney(bonus);
 
-		m_assistSystem.AddAssistRelationship(occupantUID, pilotUID);
+		m_assistSystem.AddAssistRelationship(occupantId, pilotId);
 		m_sessionDataGameComp.AddSessionXpAndMoney(bonus, bonus, pilotUID);
 		m_kothBackendApi.DoRpcSyncProfileToPlayer(profile);
 
